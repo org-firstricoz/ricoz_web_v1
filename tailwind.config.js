@@ -2,8 +2,11 @@
 export default {
   content: ["./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        "rz-lategray": "#1B3228",
+      },
+    },
   },
   plugins: [],
-}
-
+};

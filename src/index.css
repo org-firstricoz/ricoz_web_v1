@@ -16,8 +16,8 @@
 }
 
 a {
-  font-weight: 500;
-  color: #646cff;
+  font-weight: 400;
+  color: #fff;
   text-decoration: inherit;
 }
 a:hover {
@@ -29,7 +29,6 @@ body {
   display: flex;
   min-width: 320px;
   min-height: 100vh;
-  color: #1a1a1a;
 }
 
 h1 {
