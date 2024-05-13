@@ -7,6 +7,9 @@ export default {
         "rz-lategray": "#1B3228",
         "rz-darkgreen": "rgba(2, 67, 0, 0.53)",
         "rz-royalblue": "#007aff",
+        "rz-lightblue": "#F9FAFF",
+        "rz-lightgray": "#888888",
+        
       },
     },
   },
