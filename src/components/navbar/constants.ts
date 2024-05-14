@@ -6,11 +6,11 @@ export interface INavLink {
 export const NAVLINKS: Array<INavLink> = [
   {
     title: "Home",
-    href: "#",
+    href: "/",
   },
   {
     title: "About",
-    href: "#",
+    href: "/about",
   },
   {
     title: "Contact",
