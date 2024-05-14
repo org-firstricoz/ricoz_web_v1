@@ -1,9 +1,9 @@
-export default function ServiceWrapper() {
+export default function ServiceWrapper({description,img,title}:{title:string,description:string,img:string}) {
   return (
-    <div className=" flex flex-col justify-center items-center">
-        <img className="w-16" src="service1.png" alt="" />
-        <p className="playfair-display text-2xl font-medium">SaaS Development</p>
-        <p>Lorem ipsum dolo dolor in in voluptate velit esse cillum dolore. epteur sint oat cupidatat Businmes</p>
+    <div className=" flex flex-col items-center p-12">
+        <img className="w-16 h-16 mb-8 object-contain" src={img} alt="" />
+        <p className="playfair-display text-2xl font-medium text-center">{title}</p>
+        <p className="text-black/50 text-center text-sm">{description}</p>
     </div>
   )
 }

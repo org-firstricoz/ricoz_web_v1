@@ -1,12 +1,19 @@
-
-export default function AchievementWrapper() {
+export default function AchievementWrapper({
+  img,
+  title,
+  value,
+}: {
+  img: string;
+  title: string;
+  value: string;
+}) {
   return (
-    <div className="flex py-32 gap-4">
-        <img className="w-16" src="achievement1.png" alt="" />
-        <div>
-            <div className="font-bold text-5xl">2044</div>
-            <div>Days Worked</div>
-        </div>
+    <div className="flex py-32 gap-8">
+      <img className="w-16 h-16 object-contain" src={img} alt="" />
+      <div>
+        <div className="font-medium text-4xl">{value}</div>
+        <div>{title}</div>
+      </div>
     </div>
-  )
+  );
 }
