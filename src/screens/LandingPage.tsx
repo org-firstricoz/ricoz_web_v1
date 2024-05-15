@@ -17,8 +17,8 @@ export default function LandingPage() {
       <AboutUsSection/>
       <OurServicesSection/>
       <AchievementStrip/>
-      {/* <OurFinishedProjects/> */}
-      {/* <LetsStartContainer/> */}
+      <OurFinishedProjects/>
+      <LetsStartContainer/>
       {/* <Footer/> */}
     </div>
   );
