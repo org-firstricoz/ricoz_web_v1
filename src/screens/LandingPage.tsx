@@ -14,7 +14,7 @@ export default function LandingPage() {
       <Navbar />
       <HeroSection />
       <WhatWeDoSection/>
-      {/* <AboutUsSection/> */}
+      <AboutUsSection/>
       {/* <OurServicesSection/> */}
       {/* <AchievementStrip/> */}
       {/* <OurFinishedProjects/> */}
