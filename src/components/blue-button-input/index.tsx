@@ -13,11 +13,11 @@ import React from "react";
  */
 export default function BlueButtonInput(): React.JSX.Element {
   return (
-    <div className="flex gap-2">
-      <div className="bg-white flex px-4 items-center gap-32 rounded-md w-96">
+    <div className="flex gap-2 sm:flex-row flex-col">
+      <div className="bg-white flex px-4 items-center rounded-md md:w-96 h-[3rem]">
         <input type="text" placeholder="Your Work Email" className="h-full" />
       </div>
-      <button className="bg-rz-royalblue py-3 px-6">Get Started</button>
+      <button className="bg-rz-royalblue py-3 px-6 rounded-md w-[10rem]">Get Started</button>
     </div>
   );
 }

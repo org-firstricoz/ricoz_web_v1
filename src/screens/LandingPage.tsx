@@ -13,13 +13,13 @@ export default function LandingPage() {
     <div className="">
       <Navbar />
       <HeroSection />
-      <WhatWeDoSection/>
-      <AboutUsSection/>
-      <OurServicesSection/>
-      <AchievementStrip/>
-      <OurFinishedProjects/>
-      <LetsStartContainer/>
-      <Footer/>
+      {/* <WhatWeDoSection/> */}
+      {/* <AboutUsSection/> */}
+      {/* <OurServicesSection/> */}
+      {/* <AchievementStrip/> */}
+      {/* <OurFinishedProjects/> */}
+      {/* <LetsStartContainer/> */}
+      {/* <Footer/> */}
     </div>
   );
 }

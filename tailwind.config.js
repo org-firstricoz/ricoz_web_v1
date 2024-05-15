@@ -11,6 +11,9 @@ export default {
         "rz-lightgray": "#888888",
         
       },
+      screens:{
+        xs:"380px"
+      }
     },
   },
   plugins: [],
