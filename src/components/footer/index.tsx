@@ -1,6 +1,6 @@
 export default function Footer() {
   return (
-    <div className="bg-rz-darkgreen px-40 py-24 grid grid-cols-4 gap-16">
+    <div className="bg-rz-darkgreen lg:px-40 md:px-24 sm:px-16 px-8 py-24 grid lg:grid-cols-4 sm:grid-cols-2 grid-cols-1  gap-16">
       <div>
       Lorem ipsum dolor sit amt conetur adcing elit. Sed do eiusod tempor utslr. Ut laboris nisi ut aute irure dolor in rein velit esse.
       </div>

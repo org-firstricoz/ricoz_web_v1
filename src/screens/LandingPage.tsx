@@ -19,7 +19,7 @@ export default function LandingPage() {
       <AchievementStrip/>
       <OurFinishedProjects/>
       <LetsStartContainer/>
-      {/* <Footer/> */}
+      <Footer/>
     </div>
   );
 }
