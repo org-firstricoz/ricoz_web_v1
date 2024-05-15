@@ -1,6 +1,6 @@
 export default function ConatactUsForm() {
   return (
-    <div className="bg-[url(contact-form-bg.png)] flex py-24 justify-center px-56">
+    <div className="bg-[url(https://res.cloudinary.com/dlxpf7d8c/image/upload/v1715794224/wksr9bdl2skux962kyq7.png)] flex py-24 justify-center px-56">
       {/* <img src="contact-form-bg.png" className="w-full" alt="" /> */}
       <div className="flex flex-col items-center justify-center gap-8">
         <div className="playfair-display text-3xl font-medium">Contact Us</div>
