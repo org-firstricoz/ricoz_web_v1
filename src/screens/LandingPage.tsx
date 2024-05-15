@@ -16,7 +16,7 @@ export default function LandingPage() {
       <WhatWeDoSection/>
       <AboutUsSection/>
       <OurServicesSection/>
-      {/* <AchievementStrip/> */}
+      <AchievementStrip/>
       {/* <OurFinishedProjects/> */}
       {/* <LetsStartContainer/> */}
       {/* <Footer/> */}
