@@ -14,7 +14,7 @@ export const NAVLINKS: Array<INavLink> = [
   },
   {
     title: "Contact",
-    href: "#",
+    href: "/contact",
   },
   {
     title: "Book a free consultation",
