@@ -15,7 +15,7 @@ export default function LandingPage() {
       <HeroSection />
       <WhatWeDoSection/>
       <AboutUsSection/>
-      {/* <OurServicesSection/> */}
+      <OurServicesSection/>
       {/* <AchievementStrip/> */}
       {/* <OurFinishedProjects/> */}
       {/* <LetsStartContainer/> */}
