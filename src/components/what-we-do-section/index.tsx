@@ -9,7 +9,7 @@ export default function WhatWeDoSection() {
             what we do
           </h2>
         </div>
-        <div className="self-stretch relative text-base text-rz-lightgray font-poppins ">
+        <div className="self-stretch relative text-base text-rz-lightgray font-poppins mx-8 ">
           We work with ambitious brands to ideate, design & build million-dollar
           businesses powered by beautifully designed and engineered software and
           technological solutions.

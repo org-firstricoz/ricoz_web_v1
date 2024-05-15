@@ -13,7 +13,7 @@ export default function LandingPage() {
     <div className="">
       <Navbar />
       <HeroSection />
-      {/* <WhatWeDoSection/> */}
+      <WhatWeDoSection/>
       {/* <AboutUsSection/> */}
       {/* <OurServicesSection/> */}
       {/* <AchievementStrip/> */}
