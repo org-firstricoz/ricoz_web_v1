@@ -35,6 +35,7 @@ export default function FloatingNavBar(): React.JSX.Element {
         opacity: scrollPosition < 400 ? 0 : 100,
         pointerEvents: scrollPosition < 400 ? "none" : "all",
       }}
+      initial={{opacity:0}}
       className="bg-rz-lategray h-16 flex fixed top-0 z-30 items-center pb-2 w-full justify-end px-0 sm:px-16 md:px-40"
     >
       <div className="hidden sm:flex gap-10">
