@@ -17,9 +17,9 @@ export default function BlueButtonInput(): React.JSX.Element {
   return (
     <motion.div variants={childVariants} className="flex gap-2 sm:flex-row flex-col">
       <div className="bg-white flex px-4 items-center rounded-sm md:w-96 h-[3rem]">
-        <input type="text" placeholder="Your Work Email" className="h-full text-sm" />
+        <input type="text" placeholder="Your Work Email" className="h-full text-sm flex-1 focus:outline-none text-black" />
       </div>
-      <button className="bg-rz-royalblue py-3 px-6 rounded-sm w-[10rem] text-sm">Get Started</button>
+      <button className="bg-rz-royalblue focus:outline-none hover:bg-blue-700 py-3 px-6 rounded-sm w-[10rem] text-sm">Get Started</button>
     </motion.div>
   );
 }
