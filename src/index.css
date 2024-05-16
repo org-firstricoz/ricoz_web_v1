@@ -80,3 +80,11 @@ button:focus-visible {
 .poppins {
   font-family: "Poppins", sans-serif;
 }
+
+::-webkit-scrollbar{
+width: 10px;
+}
+
+::-webkit-scrollbar-thumb{
+background-color: rgba(2, 67, 0, 0.53);
+}

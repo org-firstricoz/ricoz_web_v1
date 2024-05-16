@@ -24,7 +24,7 @@ export default function HeroSection() {
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1, transition: { duration: 0.6 } }}
     >
-      <motion.div variants={parentVariants} initial="hidden" animate="visible" className="bg-rz-darkgreen/20 h-full md:px-32 sm:px-24 xs:px-16 px-8 sm:pt-40 pt-24 sm:pb-72 pb-40 w-full">
+      <motion.div variants={parentVariants} initial="hidden" animate="visible" className="bg-rz-darkgreen/20 h-full md:px-40 sm:px-24 xs:px-16 px-8 sm:pt-40 pt-24 sm:pb-72 pb-40 w-full">
         <motion.h2
           variants={childVariants}
           className="md:text-7xl md:leading-[90px] sm:text-5xl xs:text-4xl text-3xl font-semibold max-w-[50rem] mb-8"

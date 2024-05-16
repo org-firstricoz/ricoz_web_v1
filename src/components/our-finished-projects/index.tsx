@@ -1,8 +1,10 @@
+import FillButton from "../fill-button";
+
 export default function OurFinishedProjects() {
   return (
-    <div className="text-black py-16 lg:px-40 md:px-32 sm:px-24 px-8 flex flex-col items-center gap-16">
+    <div className="text-black py-28 lg:px-40 md:px-32 sm:px-24 px-8 flex flex-col items-center gap-16">
       <div className="flex flex-col items-center justify-center">
-        <h2 className="playfair-display text-2xl font-semibold">
+        <h2 className="playfair-display text-4xl font-semibold">
           Our Finished Projects
         </h2>
         <h3 className="text-black/50 text-center">
@@ -18,9 +20,7 @@ export default function OurFinishedProjects() {
           <img src="fp5.png" alt="" />
         </div>
       </div>
-      <div className=" bg-rz-lategray text-white py-4 w-[10rem] flex justify-center">
-        VIEW ALL
-      </div>
+      <FillButton title="VIEW ALL"/>
     </div>
   );
 }

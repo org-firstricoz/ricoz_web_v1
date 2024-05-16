@@ -7,6 +7,7 @@
 import React from "react";
 import { NAVLINKS } from "./constants";
 import Menu from "./Menu";
+import NavLink from "./NavLink";
 
 /**
  * A navigation bar component.
@@ -18,9 +19,11 @@ export default function Navbar(): React.JSX.Element {
     <nav className="bg-rz-lategray h-28 flex items-center w-full justify-end px-0 sm:px-16 md:px-40">
       <div className="hidden sm:flex gap-10">
         {NAVLINKS.map((navlink, i) => (
-          <a className="tracking-[1px] text-sm" key={`NAVLINK_MAIN_${navlink.title}_${i}`} href={navlink.href}>
-            {navlink.title}
-          </a>
+          <NavLink
+            title={navlink.title}
+            href={navlink.href}
+            key={`NAVLINK_MAIN_${navlink.title}_${i}`}
+          />
         ))}
       </div>
       <Menu />
