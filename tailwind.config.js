@@ -9,11 +9,11 @@ export default {
         "rz-royalblue": "#007aff",
         "rz-lightblue": "#F9FAFF",
         "rz-lightgray": "#888888",
-        
+        "rz-darkgray": "#4D4E54",
       },
-      screens:{
-        xs:"380px"
-      }
+      screens: {
+        xs: "380px",
+      },
     },
   },
   plugins: [],
