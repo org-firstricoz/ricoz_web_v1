@@ -10,7 +10,7 @@ const SERVICES = [
         img:"service2.png"
     },
     {
-        title:"Mobile Application Development",
+        title:"App Development",
         description:"Lorem ipsum dolo dolor in in voluptate velit esse cillum dolore. epteur sint oat cupidatat Businmes",
         img:"service3.png"
     },
