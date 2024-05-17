@@ -3,7 +3,6 @@ import FillButton from "../fill-button";
 import { PROJECTS } from "./constants";
 import ProjectWrapper from "./project-wrapper";
 import { motion } from "framer-motion";
-import { BoxParentVariants } from "../../animation/entry002";
 
 export default function OurFinishedProjects() {
   const [expand, setExpand] = React.useState(false);
