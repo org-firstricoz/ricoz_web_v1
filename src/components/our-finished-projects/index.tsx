@@ -1,6 +1,10 @@
+import React from "react";
 import FillButton from "../fill-button";
+import { PROJECTS } from "./constants";
+import ProjectWrapper from "./project-wrapper";
 
 export default function OurFinishedProjects() {
+  const [expand, setExpand] = React.useState(false);
   return (
     <div className="text-black py-28 lg:px-40 md:px-32 sm:px-24 px-8 flex flex-col items-center gap-16">
       <div className="flex flex-col items-center justify-center">
@@ -12,15 +16,35 @@ export default function OurFinishedProjects() {
         </h3>
       </div>
       <div className="flex lg:gap-16 sm:gap-8 gap-4">
-        <img src="fp1.png" className="sm:w-1/3 w-1/2 object-cover" alt="" />
-        <div className="grid md:grid-cols-2 grid-cols-1 lg:gap-16 sm:gap-8 gap-4">
-          <img src="fp2.png" alt="" />
-          <img src="fp3.png" alt="" />
-          <img src="fp4.png" alt="" />
-          <img src="fp5.png" alt="" />
+        <div className="grid md:grid-cols-3 grid-cols-1 transition-all lg:gap-12 sm:gap-8 gap-4 overflow-hidden">
+          {PROJECTS.map((project, i) => {
+            if (expand)
+              return (
+                <ProjectWrapper
+                  key={`${project.title}_${i}`}
+                  title={project.title}
+                  description={project.description}
+                  img={project.img}
+                  span={project.span}
+                />
+              );
+            else {
+              if (i < 5) {
+                return (
+                  <ProjectWrapper
+                    key={`${project.title}_${i}`}
+                    title={project.title}
+                    description={project.description}
+                    img={project.img}
+                    span={project.span}
+                  />
+                );
+              }
+            }
+          })}
         </div>
       </div>
-      <FillButton title="VIEW ALL"/>
+      <FillButton onClick={() => setExpand((x) => !x)} title={expand?"VIEW LESS":"VIEW MORE"} />
     </div>
   );
 }
