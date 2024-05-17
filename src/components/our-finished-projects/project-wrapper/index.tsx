@@ -1,23 +1,27 @@
 import { motion } from "framer-motion";
 import React from "react";
+import { BoxParentVariants } from "../../../animation/entry002";
 
 export default function ProjectWrapper({
   img,
   span,
   title,
-  description
+  description,
 }: {
   span: "1" | "2";
   img: string;
-  title:string,
-  description:string
+  title: string;
+  description: string;
 }) {
   const [hovered, setHovered] = React.useState(false);
   return (
-    <div
+    <motion.div
       onMouseOver={() => setHovered(true)}
       onMouseOut={() => setHovered(false)}
-      className={`relative ${span == "1" ? "row-span-1" : "row-span-2"}  overflow-hidden`}
+      variants={BoxParentVariants}
+      className={`relative ${
+        span == "1" ? "row-span-1" : "row-span-2"
+      }  overflow-hidden`}
     >
       <img src={img} className=" h-full object-cover w-full" alt="" />
       <motion.div
@@ -38,6 +42,6 @@ export default function ProjectWrapper({
           VISIT
         </motion.button>
       </motion.div>
-    </div>
+    </motion.div>
   );
 }

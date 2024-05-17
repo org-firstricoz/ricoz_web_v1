@@ -2,6 +2,8 @@ import React from "react";
 import FillButton from "../fill-button";
 import { PROJECTS } from "./constants";
 import ProjectWrapper from "./project-wrapper";
+import { motion } from "framer-motion";
+import { BoxParentVariants } from "../../animation/entry002";
 
 export default function OurFinishedProjects() {
   const [expand, setExpand] = React.useState(false);
@@ -16,7 +18,7 @@ export default function OurFinishedProjects() {
         </h3>
       </div>
       <div className="flex lg:gap-16 sm:gap-8 gap-4">
-        <div className="grid md:grid-cols-3 grid-cols-1 transition-all lg:gap-12 sm:gap-8 gap-4 overflow-hidden">
+        <motion.div className="grid md:grid-cols-3 grid-cols-1 transition-all lg:gap-12 sm:gap-8 gap-4 overflow-hidden">
           {PROJECTS.map((project, i) => {
             if (expand)
               return (
@@ -42,7 +44,7 @@ export default function OurFinishedProjects() {
               }
             }
           })}
-        </div>
+        </motion.div>
       </div>
       <FillButton onClick={() => setExpand((x) => !x)} title={expand?"VIEW LESS":"VIEW MORE"} />
     </div>
