@@ -18,13 +18,13 @@ export default function ServiceDetailsPage() {
           {SERVICES.filter((service) => service.title === serviceName).map(
             (service,i) => (
               <div key={`SERVICE_00${i}`} className="relative flex flex-col items-center">
-                <h2 className="sm:text-5xl text-4xl font-bold md:text-center  mb-6 sm:mt-10 playfair-display">
+                <h2 className="sm:text-5xl xs:text-4xl text-3xl font-bold md:text-center  mb-6 sm:mt-10 playfair-display">
                   {service.title}
                 </h2>
-                <h3 className="font-medium text-white max-w-[40rem] md:text-center sm:text-base text-sm mb-4">
+                <h3 className="font-medium text-white max-w-[40rem] text-center sm:text-base text-sm mb-4">
                   {service.description}
                 </h3>
-                <div className="w-[90rem] h-[80rem] absolute bg-rz-darkgreen sm:top-[-64rem] xs:top-[-67rem] top-[-65rem]  left-1/2 -translate-x-1/2 rounded-full -z-10"></div>
+                <div className="w-[90rem] h-[80rem] absolute bg-rz-darkgreen sm:top-[-64rem] xs:top-[-69rem] top-[-68rem]  left-1/2 -translate-x-1/2 rounded-full -z-10"></div>
                 <div className="sm:mt-24 mt-16 flex md:flex-row flex-col justify-between w-full md:items-center">
                   <div>
                     <h2 className="font-semibold text-2xl mb-2">
