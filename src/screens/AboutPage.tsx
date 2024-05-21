@@ -2,6 +2,7 @@ import AchievementStrip from "../components/achievement-strip";
 import Footer from "../components/footer";
 import LetsStartContainer from "../components/lets-start-container";
 import MarketOpportunity from "../components/market-opportunity";
+import MeetOurLeaders from "../components/meet-our-leaders";
 import Navbar from "../components/navbar";
 import OurUsers from "../components/our-users";
 import OurValues from "../components/our-values";
@@ -17,6 +18,7 @@ export default function AboutPage() {
       <OurUsers/>
       <MarketOpportunity/>
       <VisionAndMission />
+      <MeetOurLeaders/>
       <AchievementStrip />
       <WhatWeDoSection />
       <LetsStartContainer />

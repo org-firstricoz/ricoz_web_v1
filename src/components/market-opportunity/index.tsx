@@ -8,7 +8,7 @@ export default function MarketOpportunity() {
         initial={{ scale: 0, borderRadius: 1000 }}
         whileInView={{ scale: 1, borderRadius: 0 }}
         src="about1.jpg"
-        className=" object-cover h-[13rem] w-full"
+        className=" object-cover h-[13rem] w-full lg:order-first order-last"
         alt=""
       />
       <motion.div
