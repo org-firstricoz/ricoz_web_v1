@@ -8,11 +8,11 @@ export default function IntegratedTools() {
         Integrated Tools
       </h3>
 
-      <div className="flex items-center gap-16">
-        <div className="w-[100rem]">
+      <div className="flex lg:flex-row flex-col items-center gap-8 xl:gap-16">
+        <div className="lg:w-[100rem] w-[20rem] lg:order-1 order-2">
           <img src="it-banner.png" alt="" />
         </div>
-        <div className=" grid grid-cols-2 gap-8 mt-16">
+        <div className=" grid sm:grid-cols-2 grid-cols-1 gap-8 mt-16">
           {INTEGRATEDTOOLS.map((integeatedTool, i) => (
             <IntegratedToolsWrapper
               key={`INTEGRATEDTOOLS_${i}`}
