@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { BoxParentVariants } from "../../animation/entry002";
+// import { BoxParentVariants } from "../../animation/entry002";
 import { MISSIONS, VISION } from "./constants";
 import PointItem from "./PointItem";
 
@@ -7,22 +7,24 @@ export default function VisionAndMission() {
   return (
     <div className="grid lg:grid-cols-2 grid-cols-1 lg:px-40 md:px-24 sm:px-16 px-4 py-24 gap-16">
       <motion.div
-        variants={BoxParentVariants}
-        initial="hidden"
-        whileInView="visible"
+        // variants={BoxParentVariants}
+        // initial="hidden"
+        // whileInView="visible"
         className="text-black flex flex-col gap-8"
       >
         <motion.h3
-          variants={BoxParentVariants}
+          // variants={BoxParentVariants}
           className="playfair-display text-3xl font-semibold"
         >
           Vision and Mission
         </motion.h3>
-        <motion.h3 variants={BoxParentVariants} className="text-black/50">
+        <motion.h3
+        //  variants={BoxParentVariants}
+          className="text-black/50">
           {VISION}
         </motion.h3>
         <motion.div
-          variants={BoxParentVariants}
+          // variants={BoxParentVariants}
           className="flex flex-col gap-4 text-black"
         >
           {MISSIONS.map((mission) => (
@@ -31,8 +33,8 @@ export default function VisionAndMission() {
         </motion.div>
       </motion.div>
       <motion.img
-        initial={{ scale: 0, borderRadius: 1000 }}
-        whileInView={{ scale: 1, borderRadius: 0 }}
+        // initial={{ scale: 0, borderRadius: 1000 }}
+        // whileInView={{ scale: 1, borderRadius: 0 }}
         src="about3.jpg"
         className="h-full object-cover"
         alt=""

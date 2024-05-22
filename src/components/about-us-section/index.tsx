@@ -6,8 +6,8 @@ export default function AboutUsSection() {
   return (
     <div className="grid md:grid-cols-2 grid-cols-1 py-32 gap-16 lg:px-40 md:px-24 sm:px-16 px-8  bg-rz-lightblue justify-center items-center">
       <motion.div
-        initial="hidden"
-        whileInView="visible"
+        // initial="hidden"
+        // whileInView="visible"
         className="text-black space-y-8"
       >
         <motion.div className="text-4xl font-semibold playfair-display text-rz-darkgray">

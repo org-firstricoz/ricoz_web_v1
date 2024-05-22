@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { BoxParentVariants } from "../../animation/entry002";
+// import { BoxParentVariants } from "../../animation/entry002";
 import LeaderInfoContainer from "./LeaderInfoContainer";
 import { LEADERS } from "./constants";
 
@@ -7,7 +7,7 @@ export default function MeetOurLeaders() {
   return (
     <div className=" lg:px-40 md:px-24 sm:px-16 px-4 pb-16 text-black">
       <motion.h3
-        variants={BoxParentVariants}
+        // variants={BoxParentVariants}
         className="playfair-display text-3xl font-semibold mb-12"
       >
         Meet Our Leaders

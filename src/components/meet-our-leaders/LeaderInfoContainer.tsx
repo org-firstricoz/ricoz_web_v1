@@ -16,8 +16,8 @@ export default function LeaderInfoContainer({
   return (
     <div className="border p-4 flex xl:flex-row flex-col gap-4">
       <motion.img
-        initial={{ scale: 0, borderRadius: 1000 }}
-        whileInView={{ scale: 1, borderRadius: 0 }}
+        // initial={{ scale: 0, borderRadius: 1000 }}
+        // whileInView={{ scale: 1, borderRadius: 0 }}
         src={img}
         className=" object-cover xl:h-[15rem] xl:w-[15rem] lg:h-[13rem] lg:w-full md:h-[15rem] md:w-full "
         alt=""
