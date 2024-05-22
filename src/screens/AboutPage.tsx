@@ -1,4 +1,6 @@
+import AboutUsSection from "../components/about-us-section";
 import AchievementStrip from "../components/achievement-strip";
+import Features from "../components/features";
 import Footer from "../components/footer";
 import LetsStartContainer from "../components/lets-start-container";
 import MarketOpportunity from "../components/market-opportunity";
@@ -8,6 +10,7 @@ import OurUsers from "../components/our-users";
 import OurValues from "../components/our-values";
 import VisionAndMission from "../components/vision-and-mission";
 import WhatWeDoSection from "../components/what-we-do-section";
+import WhyChooseRicoz from "../components/why-choose-ricoz";
 
 export default function AboutPage() {
   return (
@@ -19,6 +22,9 @@ export default function AboutPage() {
       <MarketOpportunity/>
       <VisionAndMission />
       <MeetOurLeaders/>
+      <AboutUsSection/>
+      <Features/>
+      <WhyChooseRicoz/>
       <AchievementStrip />
       <WhatWeDoSection />
       <LetsStartContainer />
