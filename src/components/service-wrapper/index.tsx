@@ -11,7 +11,7 @@ export default function ServiceWrapper({
 }) {
   return (
     <motion.a
-      className=" flex flex-col items-center p-0 cursor-pointer "
+      className=" flex flex-col items-center p-8 cursor-pointer border"
       href={`/services/${title}`}
     >
       <img className="w-16 h-16 mb-8 object-contain" src={img} alt="" />

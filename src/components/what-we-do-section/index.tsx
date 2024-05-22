@@ -17,7 +17,7 @@ export default function WhatWeDoSection() {
         </div>
       </div>
       <section className="self-stretch my-16 flex flex-row items-start justify-between pt-0 px-0 pb-[40.9px] box-border max-w-full text-center text-xl text-white font-playfair-display mq450:pb-[27px] mq450:box-border">
-        <div className="w-[1170px] flex flex-row flex-wrap items-start justify-center pt-[15px] px-[0px] pb-0 box-border gap-[30px] max-w-full">
+        <div className=" flex flex-row flex-wrap items-start justify-between pt-[15px] px-[0px] pb-0 box-border gap-[30px] max-w-full">
           <WwdWrapper
             consultencypng="/wwd1.png"
             businessConsultancy="SaaS Development"
