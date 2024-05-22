@@ -1,7 +1,5 @@
 import { motion } from "framer-motion";
 import React from "react";
-import { BoxParentVariants } from "../../../animation/entry002";
-
 export default function ProjectWrapper({
   img,
   span,
@@ -13,12 +11,12 @@ export default function ProjectWrapper({
   title: string;
   description: string;
 }) {
-  const [hovered, setHovered] = React.useState(false);
+  const [hovered] = React.useState(false);
   return (
     <motion.div
-      onMouseOver={() => setHovered(true)}
-      onMouseOut={() => setHovered(false)}
-      variants={BoxParentVariants}
+      // onMouseOver={() => setHovered(true)}
+      // onMouseOut={() => setHovered(false)}
+      
       className={`relative ${
         span == "1" ? "row-span-1" : "row-span-2"
       }  overflow-hidden`}

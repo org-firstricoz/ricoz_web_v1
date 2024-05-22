@@ -1,6 +1,4 @@
 import { FunctionComponent, useMemo, type CSSProperties } from "react";
-import { motion } from "framer-motion";
-import { BoxChildVariants } from "../../animation/entry002";
 
 export type WwdWrapperType = {
   consultencypng?: string;
@@ -44,9 +42,7 @@ const WwdWrapper: FunctionComponent<WwdWrapperType> = ({
   }, [propColor, propMinWidth]);
 
   return (
-    <motion.div
-      variants={BoxChildVariants}
-      whileHover={{scale:0.9}}
+    <div
       className="flex-1 bg-white cursor-pointer shadow-[0px_0px_5px_rgba(35,_37,_41,_0.1)] overflow-hidden flex flex-row items-start justify-start min-w-[270px] max-w-full text-center text-xl text-rz-lategray font-playfair-display"
       style={divStyle}
     >
@@ -74,7 +70,7 @@ const WwdWrapper: FunctionComponent<WwdWrapperType> = ({
           </div>
         </div>
       </div>
-    </motion.div>
+    </div>
   );
 };
 

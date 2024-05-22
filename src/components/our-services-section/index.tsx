@@ -1,6 +1,5 @@
 import { motion } from "framer-motion";
 import ServiceWrapper from "../service-wrapper";
-import { BoxParentVariants } from "../../animation/entry002";
 import SERVICES from "../../constants/SERVICES";
 
 export default function OurServicesSection() {
@@ -13,9 +12,6 @@ export default function OurServicesSection() {
         Services We Deliver & Help You Implement For Success
       </p>
       <motion.div
-        variants={BoxParentVariants}
-        initial="hidden"
-        whileInView="visible"
         className="grid lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 md:gap-32 gap-8 mb-16 w-full"
       >
         {SERVICES.map((service, i) => (

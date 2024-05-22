@@ -1,5 +1,4 @@
 import { motion } from "framer-motion";
-import { BoxChildVariants } from "../../animation/entry002";
 
 export default function ServiceWrapper({
   description,
@@ -12,7 +11,6 @@ export default function ServiceWrapper({
 }) {
   return (
     <motion.a
-      variants={BoxChildVariants}
       className=" flex flex-col items-center p-0 cursor-pointer "
       href={`/services/${title}`}
     >
