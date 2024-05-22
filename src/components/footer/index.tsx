@@ -60,7 +60,7 @@ export default function Footer() {
       </div>
       <div className="mt-16 flex flex-col gap-2 py-8 border-y-2">
         <h4 className="text-xl font-medium">Our Presence</h4>
-        <div className="flex gap-4 ">
+        <div className="flex gap-4 flex-wrap xs:text-base text-sm">
           <p>Delhi</p>
           <p>Noida</p>
           <p>Greater Noida</p>
@@ -68,7 +68,7 @@ export default function Footer() {
           <p>Nigeria</p>
         </div>
       </div>
-      <p className="text-center py-3">
+      <p className="text-center py-3 xs:text-base text-sm">
         © 2024 RICOZ TECHNOLOGIES PVT LTD. All Rights Reserved
       </p>
     </div>
