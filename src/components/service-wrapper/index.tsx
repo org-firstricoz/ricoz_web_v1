@@ -18,7 +18,7 @@ export default function ServiceWrapper({
       <p className="playfair-display text-2xl font-medium text-center mb-2">
         {title}
       </p>
-      <p className="text-black/50 text-center text-sm w-[17rem]">
+      <p className="text-black/50 text-center text-sm xl:w-[17rem]">
         {description}
       </p>
     </motion.a>

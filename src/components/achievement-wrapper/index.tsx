@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { BoxParentVariants } from "../../animation/entry002";
+// import { BoxParentVariants } from "../../animation/entry002";
 
 export default function AchievementWrapper({
   img,
@@ -12,8 +12,8 @@ export default function AchievementWrapper({
 }) {
   return (
     <motion.div
-      variants={BoxParentVariants}
-      className="flex lg:pb-32 pb-16 gap-8 justify-center"
+      // variants={BoxParentVariants}
+      className="flex lg:pb-32 pb-16 gap-8 justify-start"
     >
       <img className="w-16 h-16 object-contain" src={img} alt="" />
       <div>
