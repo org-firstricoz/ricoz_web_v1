@@ -7,6 +7,7 @@ export default function Features() {
       <h3 className="text-4xl font-semibold playfair-display text-rz-darkgray">
         Features 
       </h3>
+      <h3 className="tracking-[1px] text-rz-darkgray/80">Illuminate your path with Advanced features we provide.</h3>
       <div className="flex items-center gap-16">
         <div className=" grid grid-cols-2 gap-8 mt-16">
           {FEATURES.map((feature, i) => (

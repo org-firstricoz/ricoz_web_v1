@@ -21,11 +21,12 @@ export default function AboutUsSection() {
           variants={childVariants}
           className="max-w-[80rem] lg:text-base text-rz-lightgray tracking-[1px]"
         >
-          About Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat. Duis aute irure dolor in
-          reprehenderit in voluptate velit esse.
+          Your Premier Tech Aggregator. In today's rapidly evolving
+          technological landscape, staying informed and accessing the latest
+          innovations can be challenging. Ricoz addresses this need by serving
+          as your go-to destination for all things tech-related. Whether you're
+          a business seeking innovative solutions or an individual looking to
+          stay updated on the latest trends, Ricoz has you covered.
         </motion.div>
         <motion.div variants={childVariants}>
           <FillButton title="LEARN MORE" />
@@ -36,14 +37,14 @@ export default function AboutUsSection() {
           scale: 1,
           borderRadius: 0,
           transition: {
-            duration:0.4
+            duration: 0.4,
             // type: "spring",
           },
         }}
         initial={{ scale: 0, borderRadius: 1000 }}
         className="flex justify-center items-center w-full overflow-hidden"
       >
-        <img className="w-[40rem]" src="about-us-img.jpeg" alt="" />
+        <img className="w-[40rem]" src="about2.jpg" alt="" />
       </motion.div>
     </div>
   );
