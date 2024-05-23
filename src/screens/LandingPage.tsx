@@ -9,6 +9,7 @@ import Navbar from "../components/navbar";
 import FloatingNavBar from "../components/navbar/FloatingNavBar";
 import OurFinishedProjects from "../components/our-finished-projects";
 import OurServicesSection from "../components/our-services-section";
+import WhatOurClientSays from "../components/what-our-client-says";
 import WhatWeDoSection from "../components/what-we-do-section";
 import WhyChooseRicoz from "../components/why-choose-ricoz";
 
@@ -26,6 +27,7 @@ export default function LandingPage() {
       <OurServicesSection/>
       <AchievementStrip/>
       <OurFinishedProjects/>
+      <WhatOurClientSays/>
       <LetsStartContainer/>
       <Footer/>
     </div>
