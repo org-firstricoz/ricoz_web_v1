@@ -8,7 +8,7 @@ export default function WhatOurClientSays() {
         What Our Client Say About Us
       </h3>
 
-      <div className="grid grid-cols-2 gap-8">
+      <div className="grid md:grid-cols-2 grid-col-1 gap-8">
         {TESTIMONIALS.map((testimonial, i) => (
           <TestimonialWrapper
             key={`TESIMONY_${i}`}

@@ -1,9 +1,9 @@
 import { motion } from "framer-motion";
 // import { BoxParentVariants } from "../../animation/entry002";
 
-export default function OurUsers() {
+export default function OurUsers({coloredBg=false}:{coloredBg?:boolean}) {
   return (
-    <div className="grid lg:grid-cols-2 grid-cols-1 lg:px-40 md:px-24 sm:px-16 px-4 pt-16 gap-16">
+    <div className={`${coloredBg?"bg-rz-lightblue":""} grid lg:grid-cols-2 grid-cols-1 lg:px-40 md:px-24 sm:px-16 px-4 py-8 gap-16`}>
       
       <motion.div
         // variants={BoxParentVariants}

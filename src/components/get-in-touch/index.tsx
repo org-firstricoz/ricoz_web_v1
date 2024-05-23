@@ -9,15 +9,15 @@ export default function GetInTouch() {
         Our success in creating business solutions is due in large part
         spacially to talented and highly committed team.
       </p>
-      <div className="grid grid-cols-3 gap-8">
+      <div className="grid md:grid-cols-3 grid-cols-1 gap-0 md:gap-8">
         <img
           className="col-span-1 h-[30rem] object-cover"
           src="about5.jpg"
           alt=""
         />
-        <div className="border col-span-2 p-12 flex flex-col gap-4">
+        <div className="border col-span-2 p-6 md:p-8 lg:p-12 flex flex-col gap-4">
           <RZTextField placeholder="Full Name" />
-          <div className="grid grid-cols-2 gap-4">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
             <RZTextField placeholder="Email" />
             <RZTextField placeholder="Phone Number" />
           </div>

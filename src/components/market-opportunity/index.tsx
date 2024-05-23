@@ -1,9 +1,9 @@
 import { motion } from "framer-motion";
 // import { BoxParentVariants } from "../../animation/entry002";
 
-export default function MarketOpportunity() {
+export default function MarketOpportunity({coloredBg=false}:{coloredBg?:boolean}) {
   return (
-    <div className="grid lg:grid-cols-2 grid-cols-1 lg:px-40 md:px-24 sm:px-16 px-4 pt-16 gap-16">
+    <div className={`${coloredBg?"bg-rz-lightblue":""} grid lg:grid-cols-2 grid-cols-1 lg:px-40 md:px-24 sm:px-16 px-4 py-8 gap-16`}>
         <motion.img
         // initial={{ scale: 0, borderRadius: 1000 }}
         // whileInView={{ scale: 1, borderRadius: 0 }}
