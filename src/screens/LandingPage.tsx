@@ -2,6 +2,7 @@ import AboutUsSection from "../components/about-us-section";
 import AchievementStrip from "../components/achievement-strip";
 import Features from "../components/features";
 import Footer from "../components/footer";
+import GetInTouch from "../components/get-in-touch";
 import HeroSection from "../components/hero-section";
 import IntegratedTools from "../components/integrated-tools";
 import LetsStartContainer from "../components/lets-start-container";
@@ -27,6 +28,7 @@ export default function LandingPage() {
       <OurServicesSection/>
       <AchievementStrip/>
       <OurFinishedProjects/>
+      <GetInTouch/>
       <WhatOurClientSays/>
       <LetsStartContainer/>
       <Footer/>
