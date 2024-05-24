@@ -2,6 +2,7 @@ import React from "react";
 import MenuIcon from "./MenuIcon";
 import { NAVLINKS } from "./constants";
 import textEllipsis from "../../utils/textEllipsis";
+import MenuLink from "./MenuLink";
 
 export default function Menu() {
   const [expand, setExpand] = React.useState<boolean>(false);
@@ -13,15 +14,28 @@ export default function Menu() {
   };
   return (
     <div className="flex sm:hidden relative">
-      <button className="focus:outline-none border-none" onClick={handleMenuExpandOnClick}>
+      <button
+        className="focus:outline-none border-none"
+        onClick={handleMenuExpandOnClick}
+      >
         <MenuIcon />
       </button>
       {expand && (
-        <div onBlur={handleMenuExpandOnBlur} className="flex flex-col absolute  z-30 right-0 top-12 text-black w-36 bg-white rounded-xl items-end border border-black">
-          {NAVLINKS.map((navlink,i) => (
-            <a key={`NAVLINK_MENU_${navlink.title}_${i}`} href={navlink.href} className="px-4 py-2">
-              {textEllipsis(navlink.title, 12)}
-            </a>
+        <div
+          onBlur={handleMenuExpandOnBlur}
+          className="flex flex-col z-30 right-0 top-0 text-black w-screen fixed h-screen bg-white items-start border overflow-y-scroll"
+        >
+          <div className="py-2 flex justify-end w-full px-4">
+            <p onClick={handleMenuExpandOnClick}>x</p>
+          </div>
+          {NAVLINKS.map((navlink, i) => (
+            <MenuLink
+              key={`NAVLINK_MENU_${navlink.title}_${i}`}
+              href={navlink.href}
+              title={navlink.title}
+              dropdown={navlink.dropdown}
+              dropdownLinks={navlink.dropdownLinks}
+            />
           ))}
         </div>
       )}

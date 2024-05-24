@@ -1,6 +1,11 @@
 export interface INavLink {
   title: string;
   href: string;
+  dropdown?: boolean;
+  dropdownLinks?: Array<{
+    title: string;
+    href: string;
+  }>;
 }
 
 export const NAVLINKS: Array<INavLink> = [
@@ -17,7 +22,42 @@ export const NAVLINKS: Array<INavLink> = [
     href: "/contact",
   },
   {
-    title: "Book a free consultation",
+    title: "Services",
+    href: "#",
+    dropdown: true,
+    dropdownLinks: [
+      {
+        title: "Web Development",
+        href: "#",
+      },
+      {
+        title: "App Development",
+        href: "#",
+      },
+      {
+        title: "Graphic Design",
+        href: "#",
+      },
+      {
+        title: "Ads Management",
+        href: "#",
+      },
+      {
+        title: "SEO Optimization",
+        href: "#",
+      },
+      {
+        title: "Google Adword",
+        href: "#",
+      },
+    ],
+  },
+  {
+    title: "Career",
+    href: "#",
+  },
+  {
+    title: "Blog",
     href: "#",
   },
 ];
