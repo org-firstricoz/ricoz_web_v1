@@ -28,27 +28,27 @@ export const NAVLINKS: Array<INavLink> = [
     dropdownLinks: [
       {
         title: "Web Development",
-        href: "#",
+        href: "services/Web Development",
       },
       {
         title: "App Development",
-        href: "#",
+        href: "services/App Development",
       },
       {
         title: "Graphic Design",
-        href: "#",
+        href: "services/Graphic Design",
       },
       {
         title: "Ads Management",
-        href: "#",
+        href: "services/Ads Management",
       },
       {
         title: "SEO Optimization",
-        href: "#",
+        href: "services/SEO Optimization",
       },
       {
         title: "Google Adword",
-        href: "#",
+        href: "services/Google Adword",
       },
     ],
   },
