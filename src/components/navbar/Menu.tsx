@@ -1,7 +1,6 @@
 import React from "react";
 import MenuIcon from "./MenuIcon";
 import { NAVLINKS } from "./constants";
-import textEllipsis from "../../utils/textEllipsis";
 import MenuLink from "./MenuLink";
 
 export default function Menu() {

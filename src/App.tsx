@@ -4,6 +4,8 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import AboutPage from "./screens/AboutPage";
 import ContactUsPage from "./screens/ContactUsPage";
 import ServiceDetailsPage from "./screens/ServiceDetailsPage";
+import CareersPage from "./screens/CareersPage";
+import BlogPage from "./screens/BlogPage";
 
 export default function App(): React.JSX.Element {
   return (
@@ -13,6 +15,8 @@ export default function App(): React.JSX.Element {
         <Route path="/about" element={<AboutPage />} />
         <Route path="/services/:serviceName" element={<ServiceDetailsPage />} />
         <Route path="/contact" element={<ContactUsPage />} />
+        <Route path="/careers" element={<CareersPage />} />
+        <Route path="/blog" element={<BlogPage />} />
       </Routes>
     </BrowserRouter>
   );

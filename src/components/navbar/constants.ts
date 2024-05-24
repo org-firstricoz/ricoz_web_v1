@@ -54,10 +54,10 @@ export const NAVLINKS: Array<INavLink> = [
   },
   {
     title: "Career",
-    href: "#",
+    href: "/careers",
   },
   {
     title: "Blog",
-    href: "#",
+    href: "/blog",
   },
 ];
