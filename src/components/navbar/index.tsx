@@ -22,6 +22,8 @@ export default function Navbar(): React.JSX.Element {
           <NavLink
             title={navlink.title}
             href={navlink.href}
+            dropdown={navlink.dropdown}
+            dropdownLinks={navlink.dropdownLinks}
             key={`NAVLINK_MAIN_${navlink.title}_${i}`}
           />
         ))}
