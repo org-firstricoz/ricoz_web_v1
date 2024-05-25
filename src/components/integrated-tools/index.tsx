@@ -3,7 +3,7 @@ import { INTEGRATEDTOOLS } from "./constants";
 
 export default function IntegratedTools() {
   return (
-    <div className="py-32 gap-16 lg:px-40 md:px-24 sm:px-16 px-8 text-black">
+    <div className="py-32 gap-16 lg:px-40 md:px-24 sm:px-16 px-8 bg-gradient-to-t from-rz-lightblue border-b text-black">
       <h3 className="text-4xl font-semibold playfair-display text-rz-darkgray">
         Integrated Tools
       </h3>

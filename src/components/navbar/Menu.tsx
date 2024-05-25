@@ -12,7 +12,7 @@ export default function Menu() {
     setExpand(false);
   };
   return (
-    <div className="flex sm:hidden relative">
+    <div className="flex md:hidden relative">
       <button
         className="focus:outline-none border-none"
         onClick={handleMenuExpandOnClick}

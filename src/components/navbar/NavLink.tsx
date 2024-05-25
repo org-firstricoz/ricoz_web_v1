@@ -18,7 +18,7 @@ export default function NavLink({
       <div
         onMouseOver={() => setLinkHovered(true)}
         onMouseOut={() => setLinkHovered(false)}
-        className="tracking-[1px] text-sm h-2 hover:text-white relative cursor-pointer"
+        className="tracking-[1px] text-xs h-2 hover:text-white relative cursor-pointer uppercase"
       >
         <div className="flex items-center gap-2">
           {title}
@@ -45,7 +45,7 @@ export default function NavLink({
           {dropdownLinks?.map((link, i) => (
             <a
               key={`LINK_DROPDOWN_${i}`}
-              className="text-nowrap py-3"
+              className="text-nowrap py-3 border-b font-medium"
               href={link.href}
             >
               {link.title}
@@ -58,7 +58,7 @@ export default function NavLink({
     <a
       onMouseOver={() => setLinkHovered(true)}
       onMouseOut={() => setLinkHovered(false)}
-      className="tracking-[1px] text-sm h-2 hover:text-white"
+      className="tracking-[1px] uppercase text-xs h-2 hover:text-white"
       href={href}
     >
       {title}

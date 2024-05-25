@@ -17,7 +17,7 @@ export default function OurFinishedProjects() {
         </h3>
       </div>
       <div className="flex lg:gap-16 sm:gap-8 gap-4">
-        <motion.div className="grid md:grid-cols-3 grid-cols-1 transition-all lg:gap-12 sm:gap-8 gap-4 overflow-hidden">
+        <motion.div className="grid md:grid-cols-3 grid-cols-1 transition-all lg:gap-8 sm:gap-8 gap-4 overflow-hidden">
           {PROJECTS.map((project, i) => {
             if (expand)
               return (
