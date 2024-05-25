@@ -3,7 +3,8 @@ import { FEATURES } from "./constants";
 
 export default function Features() {
   return (
-    <div className="py-16 gap-16 lg:px-40 md:px-24 sm:px-16 px-8 text-black">
+    <div className="py-16 gap-16 lg:px-40 md:px-24 sm:px-16 px-4 text-black relative overflow-hidden">
+      <div className="w-[90rem] h-[90rem] absolute rounded-full border-dashed -z-10 -right-[28rem] border-[5rem] -bottom-[7rem]"></div>
       <h3 className="text-4xl font-semibold playfair-display text-rz-darkgray ">
         Features 
       </h3>

@@ -4,7 +4,7 @@ import SERVICES from "../../constants/SERVICES";
 
 export default function OurServicesSection() {
   return (
-    <div className="text-black flex flex-col items-center lg:px-40 md:px-32 sm:px-24 px-8 py-16">
+    <div className="text-black flex flex-col items-center lg:px-40 md:px-32 sm:px-24 px-4 py-16">
       <h3 className="playfair-display text-4xl font-semibold text-rz-lategray mb-2">
         Our Services
       </h3>

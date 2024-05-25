@@ -14,7 +14,7 @@ export default function Menu() {
   return (
     <div className="flex md:hidden relative">
       <button
-        className="focus:outline-none border-none"
+        className="focus:outline-none border-none p-0"
         onClick={handleMenuExpandOnClick}
       >
         <MenuIcon />
@@ -22,7 +22,7 @@ export default function Menu() {
       {expand && (
         <div
           onBlur={handleMenuExpandOnBlur}
-          className="flex flex-col z-30 right-0 top-0 text-black z-40 w-screen fixed h-screen bg-white items-start border overflow-y-scroll"
+          className="flex flex-col right-0 top-0 text-black z-40 w-screen fixed h-screen bg-white items-start border overflow-y-scroll"
         >
           <div className="py-2 flex justify-end w-full px-4">
             <p onClick={handleMenuExpandOnClick}>x</p>

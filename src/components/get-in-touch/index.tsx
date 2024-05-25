@@ -3,9 +3,9 @@ import RZTextField from "./RZTextField";
 
 export default function GetInTouch() {
   return (
-    <div className="text-black lg:px-40 md:px-24 sm:px-16 px-4 py-16">
+    <div className="lg:px-40 md:px-24 sm:px-16 px-4 py-32 bg-[#151515]">
       <h3 className="playfair-display text-3xl font-semibold">Get In Touch</h3>
-      <p className="text-rz-lightgray mb-8">
+      <p className="text-rz-lightgray mb-8 mt-2">
         Our success in creating business solutions is due in large part
         spacially to talented and highly committed team.
       </p>
@@ -15,7 +15,7 @@ export default function GetInTouch() {
           src="about5.jpg"
           alt=""
         />
-        <div className="border col-span-2 p-6 md:p-8 lg:p-12 flex flex-col gap-4">
+        <div className="border border-white/20 border-dashed col-span-2 p-6 md:p-8 lg:p-12 flex flex-col gap-4">
           <RZTextField placeholder="Full Name" />
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
             <RZTextField placeholder="Email" />

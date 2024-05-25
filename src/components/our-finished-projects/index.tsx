@@ -7,9 +7,9 @@ import { motion } from "framer-motion";
 export default function OurFinishedProjects() {
   const [expand, setExpand] = React.useState(false);
   return (
-    <div className="text-black py-28 lg:px-40 md:px-32 sm:px-24 px-8 flex flex-col items-center gap-16">
+    <div className="text-black py-28 lg:px-40 md:px-32 sm:px-24 px-4 flex flex-col items-center gap-16">
       <div className="flex flex-col items-center justify-center">
-        <h2 className="playfair-display text-4xl font-semibold">
+        <h2 className="playfair-display text-2xl md:text-4xl font-semibold text-center">
           Our Finished Projects
         </h2>
         <h3 className="text-black/50 text-center">
