@@ -15,14 +15,14 @@ export default function Footer() {
           <div className="flex gap-2 mt-4 sm:mt-8 ">
             <img src="home.png" className="h-6" alt="" />
             <p className="font-light text-sm">
-              Nayagon, Nimi Vihar, Sector 89, Noida Phase 02, Noida
+              FLOOR, P-2,S.NO.150/A/1+2 BHUSARI COLONY KOTHRUD PUNE-411038
             </p>
           </div>
           <div className="flex gap-2">
             <img src="email.png" className="h-6" alt="" />
-            <p className="font-light text-sm">care@ricoz.com</p>
+            <p className="font-light text-sm">care@ricoz.in</p>
           </div>
-          <div className="ml-7 -mt-4 text-sm">+91 8961310988</div>
+          <div className="ml-7 -mt-4 text-sm">+91 7011112666</div>
         </div>
         <LinksList
           heading="Useful Links"
@@ -53,15 +53,16 @@ export default function Footer() {
       <div className="mt-4 sm:mt-16 flex flex-col gap-2 py-8 border-y-2">
         <h4 className="text-xl font-medium playfair-display">Our Presence</h4>
         <div className="flex gap-4 flex-wrap xs:text-base text-sm">
-          <p>Delhi</p>
-          <p>Noida</p>
-          <p>Greater Noida</p>
-          <p>Gurugram</p>
+          <p>India</p>
+          <p>US</p>
+          <p>UK</p>
+          <p>CANADA</p>
           <p>Nigeria</p>
+          <p>Australia</p>
         </div>
       </div>
       <p className="text-center py-3 xs:text-base text-sm">
-        © 2024 RICOZ TECHNOLOGIES PVT LTD. All Rights Reserved
+        © 2021 FIRSTRICOZ PRIVATE LIMITED. All Right Reserved
       </p>
     </div>
   );

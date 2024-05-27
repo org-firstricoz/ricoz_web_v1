@@ -1,5 +1,5 @@
 import React from "react";
-import BlueButtonInput from "./blue-button-input";
+// import BlueButtonInput from "./blue-button-input";
 import { SLIDES } from "./constants";
 import { motion } from "framer-motion";
 // import { childVariants, parentVariants } from "./variants";
@@ -42,7 +42,7 @@ export default function HeroSection() {
           businesses powered by beautifully designed and engineered software and
           technological solutions.
         </motion.h5>
-        <BlueButtonInput />
+        {/* <BlueButtonInput /> */}
       </motion.div>
     </motion.div>
   );
