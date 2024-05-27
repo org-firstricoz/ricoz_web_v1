@@ -24,10 +24,31 @@ export default function Footer() {
           </div>
           <div className="ml-7 -mt-4 text-sm">+91 8961310988</div>
         </div>
-        <LinksList  heading="Useful Links"/>
-        <LinksList  heading="Policies"/>
-        <LinksList  heading="Help"/>
-        <NewsLetter/>
+        <LinksList
+          heading="Useful Links"
+          links={[
+            { title: "Home", href: "/" },
+            { title: "About", href: "/about" },
+            { title: "Contact Us", href: "/contact" },
+          ]}
+        />
+        <LinksList
+          heading="Policies"
+          links={[
+            { title: "Terms", href: "/" },
+            { title: "Privacy Policy", href: "/about" },
+            { title: "Cookie Policy", href: "/contact" },
+            { title: "Fraud Disclaimer", href: "/contact" },
+          ]}
+        />
+        <LinksList
+          heading="Help"
+          links={[
+            { title: "FAQs", href: "/" },
+            { title: "Customer Care", href: "/about" },
+          ]}
+        />
+        <NewsLetter />
       </div>
       <div className="mt-4 sm:mt-16 flex flex-col gap-2 py-8 border-y-2">
         <h4 className="text-xl font-medium playfair-display">Our Presence</h4>

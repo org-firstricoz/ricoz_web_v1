@@ -1,7 +1,13 @@
 import React from "react";
 import ChevronSVGBig from "../../svgs/ChevronSVGBig";
 
-export default function LinksList({heading}:{heading:string}) {
+export default function LinksList({
+  heading,
+  links,
+}: {
+  heading: string;
+  links: Array<{ title: string; href: string }>;
+}) {
   const [expand, setExpand] = React.useState(false);
   return (
     <div className="border-b-2 sm:border-none ">
@@ -13,19 +19,22 @@ export default function LinksList({heading}:{heading:string}) {
           {heading}
         </h3>
         <div className="sm:hidden flex">
-
-        <ChevronSVGBig />
+          <ChevronSVGBig />
         </div>
       </div>
       <div className={` ${expand ? "flex" : "hidden"} flex-col gap-4 text-sm`}>
-        <h5>Home</h5>
-        <h5>About</h5>
-        <h5>Contact Us</h5>
+        {links.map((link, i) => (
+          <a key={`LINK_${link.title}_${i}`} href={link.href}>
+            {link.title}
+          </a>
+        ))}
       </div>
       <div className={` sm:flex hidden flex-col gap-4 text-sm `}>
-        <h5>Home</h5>
-        <h5>About</h5>
-        <h5>Contact Us</h5>
+      {links.map((link, i) => (
+          <a key={`LINK_B_${link.title}_${i}`} href={link.href}>
+            {link.title}
+          </a>
+        ))}
       </div>
     </div>
   );
