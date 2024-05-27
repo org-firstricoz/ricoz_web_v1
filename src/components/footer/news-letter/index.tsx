@@ -4,20 +4,22 @@ import ChevronSVGBig from "../../svgs/ChevronSVGBig";
 export default function NewsLetter() {
   const [expand, setExpand] = React.useState(false);
   return (
-    <div className="lg:col-span-2 col-span-1 border-b-2 sm:border-none border-white/40">
+    <div className="lg:col-span-2 col-span-1 ">
       <div
         onClick={() => setExpand((x) => !x)}
-        className="flex justify-between"
+        className="flex justify-between border-b-2 sm:border-none border-white/40"
       >
         <h3 className=" text-white text-sm sm:text-xl sm:mb-4">
           Our News Letter
         </h3>
-        <div className="sm:hidden flex">
+        <div
+          className={`sm:hidden flex  ${expand ? "rotate-180" : "rotate-0"}`}
+        >
           <ChevronSVGBig />
         </div>
       </div>
       {expand && (
-        <div className={` sm:hidden flex flex-col gap-4`}>
+        <div className={` sm:hidden flex flex-col gap-4 mt-2 sm:mt-0 `}>
           <h4 className="text-sm sm:text-base text-rz-lightblue/60">
             Subscribe to our newsletter to get the latest News and offers..
           </h4>

@@ -10,21 +10,21 @@ export default function LinksList({
 }) {
   const [expand, setExpand] = React.useState(false);
   return (
-    <div className="border-b-2 sm:border-none border-white/40">
+    <div className="">
       <div
         onClick={() => setExpand((x) => !x)}
-        className={`flex justify-between `}
+        className={`flex justify-between border-b-2 sm:border-none border-white/40`}
       >
-        <h3 className="text-white text-sm text-nowrap mb-0">
+        <h3 className="text-white text-sm text-nowrap mb-0 ">
           {heading}
         </h3>
-        <div className="sm:hidden flex">
+        <div className={`sm:hidden flex ${expand ? "rotate-180":"rotate-0"}`}>
           <ChevronSVGBig />
         </div>
       </div>
       {expand && (
         <div
-          className={` sm:hidden flex flex-col gap-4 text-sm`}
+          className={` sm:hidden flex flex-col gap-1 sm:gap-4 text-sm mt-1 sm:mt-0`}
         >
           {links.map((link, i) => (
             <a key={`LINK_${link.title}_${i}`} href={link.href}>
