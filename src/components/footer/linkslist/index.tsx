@@ -15,7 +15,7 @@ export default function LinksList({
         onClick={() => setExpand((x) => !x)}
         className={`flex justify-between border-b-2 sm:border-none border-white/40`}
       >
-        <h3 className="text-white text-sm text-nowrap mb-0 ">
+        <h3 className="text-white text-sm text-nowrap mb-0 sm:mb-4 ">
           {heading}
         </h3>
         <div className={`sm:hidden flex ${expand ? "rotate-180":"rotate-0"}`}>
