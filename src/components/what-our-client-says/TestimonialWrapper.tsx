@@ -10,7 +10,7 @@ export default function TestimonialWrapper({
   img: string;
 }) {
   return (
-    <div className="flex xl:flex-row flex-col p-8 gap-8 items-center shadow1 ">
+    <div className="flex xl:flex-row flex-col p-4 sm:p-8 gap-8 items-center shadow1 ">
       <div className="flex flex-col items-center">
         <img
           src={img}
@@ -22,7 +22,7 @@ export default function TestimonialWrapper({
         <h4 className="text-sm text-nowrap text-[#00AC59]">{profession}</h4>
       </div>
       <div>
-        <h3 className="tracking-[1px] font-light">{testimony}</h3>
+        <h3 className="tracking-[1px] font-light text-sm sm:text-base">{testimony}</h3>
       </div>
     </div>
   );

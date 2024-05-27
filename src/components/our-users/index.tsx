@@ -3,23 +3,23 @@ import { motion } from "framer-motion";
 
 export default function OurUsers({coloredBg=false}:{coloredBg?:boolean}) {
   return (
-    <div className={`${coloredBg?"bg-rz-lightblue":""} grid lg:grid-cols-2 grid-cols-1 lg:px-40 md:px-24 sm:px-16 px-4 py-8 gap-16`}>
+    <div className={`${coloredBg?"bg-rz-lightblue":""} grid lg:grid-cols-2 grid-cols-1 lg:px-40 md:px-24 sm:px-16 px-4 py-8 gap-8 sm:gap-16`}>
       
       <motion.div
         // variants={BoxParentVariants}
         // initial="hidden"
         // whileInView="visible"
-        className="text-black flex flex-col gap-8"
+        className="text-black flex flex-col gap-4 sm:gap-8"
       >
         <motion.h3
           // variants={BoxParentVariants}
-          className="playfair-display text-3xl font-semibold"
+          className="playfair-display text-2xl sm:text-3xl font-semibold"
         >
           Our Users
         </motion.h3>
         <motion.h3
         //  variants={BoxParentVariants}
-          className="text-black/50">
+          className="text-black/50 text-sm sm:text-base">
           Ricoz caters to a diverse audience, including tech enthusiasts,
           professionals, and decision-makers across various industries. Whether
           you're an individual seeking the latest gadgets or a business looking

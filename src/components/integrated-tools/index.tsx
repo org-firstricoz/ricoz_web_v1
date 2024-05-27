@@ -3,8 +3,8 @@ import { INTEGRATEDTOOLS } from "./constants";
 
 export default function IntegratedTools() {
   return (
-    <div className="py-32 gap-16 lg:px-40 md:px-24 sm:px-16 px-8 bg-gradient-to-t from-rz-lightblue border-b text-black">
-      <h3 className="text-4xl font-semibold playfair-display text-rz-darkgray">
+    <div className="py-8 sm:py-32 gap-16 lg:px-40 md:px-24 sm:px-16 px-4 bg-gradient-to-t from-rz-lightblue border-b text-black">
+      <h3 className="text-2xl sm:text-4xl font-semibold playfair-display text-rz-darkgray">
         Integrated Tools
       </h3>
 
@@ -12,7 +12,7 @@ export default function IntegratedTools() {
         <div className="lg:w-[100rem] w-[20rem] lg:order-1 order-2">
           <img src="it-banner.png" alt="" />
         </div>
-        <div className=" grid sm:grid-cols-2 grid-cols-1 gap-8 mt-16">
+        <div className=" grid sm:grid-cols-2 grid-cols-1 gap-4 sm:gap-8 mt-4 sm:mt-16">
           {INTEGRATEDTOOLS.map((integeatedTool, i) => (
             <IntegratedToolsWrapper
               key={`INTEGRATEDTOOLS_${i}`}

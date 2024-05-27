@@ -2,14 +2,14 @@ import WwdWrapper from "../wwd-wrapper";
 
 export default function WhatWeDoSection() {
   return (
-    <section className="self-stretch flex flex-col items-center lg:px-40 md:px-24 sm:px-16 px-4 justify-center  pt-16 pb-16 box-border max-w-full text-center text-11xl text-white font-playfair-display">
+    <section className="self-stretch flex flex-col items-center lg:px-40 md:px-24 sm:px-16 px-4 justify-center sm:py-16 box-border max-w-full text-center text-11xl text-white font-playfair-display">
       <div className="w-[999.4px]  flex flex-col items-start justify-start gap-[27px] max-w-full">
         <div className="self-stretch flex flex-row items-start justify-center py-0 pr-[22px] pl-5">
-          <h2 className="m-0 w-[168px] relative text-rz-lategray playfair-display text-3xl leading-[40px] capitalize font-bold font-inherit flex items-center justify-center mq800:text-5xl mq800:leading-[32px] mq450:text-lg mq450:leading-[24px]">
+          <h2 className="m-0 w-[168px] relative text-rz-lategray playfair-display text-2xl sm:text-3xl leading-[40px] capitalize font-bold font-inherit flex items-center justify-center mq800:text-5xl mq800:leading-[32px] mq450:text-lg mq450:leading-[24px]">
             what we do
           </h2>
         </div>
-        <div className="self-stretch relative text-base text-rz-lategray/60 font-poppins mx-8  tracking-[1px]">
+        <div className="self-stretch relative text-sm sm:text-base text-rz-lategray/60 font-poppins mx-4 sm:mx-8  tracking-[1px]">
           Our diverse range of services is designed to meet the unique needs of
           businesses across various industries, helping them achieve their goals
           and stay ahead in a rapidly evolving digital landscape.

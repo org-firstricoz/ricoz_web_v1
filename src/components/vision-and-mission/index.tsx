@@ -5,7 +5,7 @@ import PointItem from "./PointItem";
 
 export default function VisionAndMission() {
   return (
-    <div className="grid lg:grid-cols-2 grid-cols-1 lg:px-40 md:px-24 sm:px-16 px-4 py-24 gap-16">
+    <div className="grid lg:grid-cols-2 grid-cols-1 lg:px-40 md:px-24 sm:px-16 px-4 sm:py-24 py-8 gap-8 sm:gap-16">
       <motion.div
         // variants={BoxParentVariants}
         // initial="hidden"
@@ -14,13 +14,13 @@ export default function VisionAndMission() {
       >
         <motion.h3
           // variants={BoxParentVariants}
-          className="playfair-display text-3xl font-semibold"
+          className="playfair-display text-2xl sm:text-3xl font-semibold"
         >
           Vision and Mission
         </motion.h3>
         <motion.h3
         //  variants={BoxParentVariants}
-          className="text-black/50">
+          className="text-black/50 text-sm sm:text-base">
           {VISION}
         </motion.h3>
         <motion.div

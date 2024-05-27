@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 
 export default function OurValues({coloredBg=false}:{coloredBg?:boolean}) {
   return (
-    <div className={`${coloredBg?"bg-rz-lightblue":""} grid lg:grid-cols-2 grid-cols-1 lg:px-40 border-y md:px-24 sm:px-16 px-4 py-8 gap-16`}>
+    <div className={`${coloredBg?"bg-rz-lightblue":""} grid lg:grid-cols-2 grid-cols-1 lg:px-40 border-y md:px-24 sm:px-16 px-4 py-8 gap-8 sm:gap-16`}>
       <motion.img
         // initial={{ scale: 0, borderRadius: 1000 }}
         // whileInView={{ scale: 1, borderRadius: 0 }}
@@ -15,17 +15,17 @@ export default function OurValues({coloredBg=false}:{coloredBg?:boolean}) {
         // variants={BoxParentVariants}
         // initial="hidden"
         // whileInView="visible"
-        className="text-black flex flex-col gap-8"
+        className="text-black flex flex-col gap-4 sm:gap-8"
       >
         <motion.h3
           // variants={BoxParentVariants}
-          className="playfair-display text-3xl font-semibold"
+          className="playfair-display text-2xl sm:text-3xl font-semibold"
         >
           Our Values
         </motion.h3>
         <motion.h3
         //  variants={BoxParentVariants}
-          className="text-black/50">
+          className="text-black/50 text-sm sm:text-base">
           Our commitment to excellence and passion for technological advancement
           are at the core of everything we do. We strive to uphold the highest
           standards of integrity, reliability, and innovation in delivering

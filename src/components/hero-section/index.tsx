@@ -26,7 +26,7 @@ export default function HeroSection() {
     >
       <motion.div 
       // variants={parentVariants} initial="hidden" animate="visible"
-       className="bg-rz-darkgreen/20 h-full flex flex-col items-start lg:px-40 md:px-24 sm:px-16 px-4 sm:pt-40 pt-24 sm:pb-28 pb-40 w-full">
+       className="bg-rz-darkgreen/20 h-full flex flex-col items-start lg:px-40 md:px-24 sm:px-16 px-4 sm:pt-40 pt-24 sm:pb-28 pb-28 w-full">
         <h3 className="border-l-2 px-2 py-1 tracking-[1px] text-sm bg-black/10 border-[#FFC96F] text-[#FFC96F] font-medium">#1 IN INDUSTRY</h3>
         <motion.h2
           // variants={childVariants}
