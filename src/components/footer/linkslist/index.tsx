@@ -10,12 +10,12 @@ export default function LinksList({
 }) {
   const [expand, setExpand] = React.useState(false);
   return (
-    <div className="border-b-2 sm:border-none ">
+    <div className="border-b-2 sm:border-none border-white/40">
       <div
         onClick={() => setExpand((x) => !x)}
         className={`flex justify-between `}
       >
-        <h3 className="playfair-display text-white text-lg text-nowrap mb-4">
+        <h3 className="text-white text-sm text-nowrap mb-0">
           {heading}
         </h3>
         <div className="sm:hidden flex">

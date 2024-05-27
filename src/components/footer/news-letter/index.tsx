@@ -4,12 +4,12 @@ import ChevronSVGBig from "../../svgs/ChevronSVGBig";
 export default function NewsLetter() {
   const [expand, setExpand] = React.useState(false);
   return (
-    <div className="lg:col-span-2 col-span-1">
+    <div className="lg:col-span-2 col-span-1 border-b-2 sm:border-none border-white/40">
       <div
         onClick={() => setExpand((x) => !x)}
         className="flex justify-between"
       >
-        <h3 className="playfair-display text-white text-lg sm:text-xl sm:mb-4">
+        <h3 className=" text-white text-sm sm:text-xl sm:mb-4">
           Our News Letter
         </h3>
         <div className="sm:hidden flex">
