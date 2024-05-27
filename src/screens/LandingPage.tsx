@@ -9,6 +9,7 @@ import LetsStartContainer from "../components/lets-start-container";
 import Navbar from "../components/navbar";
 import FloatingNavBar from "../components/navbar/FloatingNavBar";
 import OurCulture from "../components/our-culture";
+import OurExpertise from "../components/our-expertise";
 import OurFinishedProjects from "../components/our-finished-projects";
 import OurServicesSection from "../components/our-services-section";
 import WhatOurClientSays from "../components/what-our-client-says";
@@ -21,6 +22,7 @@ export default function LandingPage() {
       <Navbar />
       <FloatingNavBar/>
       <HeroSection />
+      <OurExpertise/>
       <WhatWeDoSection/>
       <AboutUsSection/>
       <Features/>
