@@ -62,7 +62,8 @@ export default function Footer() {
         </div>
       </div>
       <p className="text-center py-3 xs:text-base text-sm">
-        © 2021 FIRSTRICOZ PRIVATE LIMITED. All Right Reserved
+        © 2021 FIRSTRICOZ PRIVATE LIMITED. All Right Reserved • CIN:
+        U72900DL2021PTC384199
       </p>
     </div>
   );
