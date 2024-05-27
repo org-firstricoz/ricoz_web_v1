@@ -22,15 +22,19 @@ export default function LinksList({
           <ChevronSVGBig />
         </div>
       </div>
-      <div className={` ${expand ? "flex" : "hidden"} flex-col gap-4 text-sm`}>
-        {links.map((link, i) => (
-          <a key={`LINK_${link.title}_${i}`} href={link.href}>
-            {link.title}
-          </a>
-        ))}
-      </div>
+      {expand && (
+        <div
+          className={` sm:hidden flex flex-col gap-4 text-sm`}
+        >
+          {links.map((link, i) => (
+            <a key={`LINK_${link.title}_${i}`} href={link.href}>
+              {link.title}
+            </a>
+          ))}
+        </div>
+      )}
       <div className={` sm:flex hidden flex-col gap-4 text-sm `}>
-      {links.map((link, i) => (
+        {links.map((link, i) => (
           <a key={`LINK_B_${link.title}_${i}`} href={link.href}>
             {link.title}
           </a>
