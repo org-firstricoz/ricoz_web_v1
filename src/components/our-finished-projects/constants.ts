@@ -14,32 +14,32 @@ const PROJECTS:Array<ProjectType> = [
     img: "proj1.jpg",
   },
   {
-    title: "Project2",
+    title: "Space Travel",
     description:
       "Lorem ipsum dolo dolor in in voluptate velit esse cillum dolore. epteur sint oat cupidatat Businmes",
     span: "1",
     img: "proj3.png",
   },
   {
-    title: "Project3",
+    title: "Ticket Book",
     description:
       "Lorem ipsum dolo dolor in in voluptate velit esse cillum dolore. epteur sint oat cupidatat Businmes",
     span: "1",
     img: "proj4.png",
   },
   {
-    title: "Project4",
+    title: "Fintech App",
     description:
       "Lorem ipsum dolo dolor in in voluptate velit esse cillum dolore. epteur sint oat cupidatat Businmes",
     span: "1",
-    img: "fp4.png",
+    img: "proj7.jpg",
   },
   {
-    title: "Project5",
+    title: "Healify",
     description:
       "Lorem ipsum dolo dolor in in voluptate velit esse cillum dolore. epteur sint oat cupidatat Businmes",
     span: "1",
-    img: "fp5.png",
+    img: "proj2.png",
   },
   {
     title: "Project2",

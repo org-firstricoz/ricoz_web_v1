@@ -44,7 +44,7 @@ export default function HeroSection() {
         </motion.h2>
         <motion.h5
           // variants={childVariants}
-          className="md:text-base sm:text-lg text-base max-w-[40rem] mb-16 font-light text-white/80 tracking-[1px]"
+          className="md:text-base sm:text-lg text-base max-w-[40rem] mb-16 font-light text-white/80 tracking-[1px] text-white"
         >
           We work with ambitious brands to ideate, design & build million-dollar
           businesses powered by beautifully designed and engineered software and

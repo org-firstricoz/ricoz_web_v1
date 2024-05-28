@@ -15,11 +15,11 @@ export default function OurValues({coloredBg=false}:{coloredBg?:boolean}) {
         // variants={BoxParentVariants}
         // initial="hidden"
         // whileInView="visible"
-        className="text-black flex flex-col gap-4 sm:gap-8"
+        className="text-black flex flex-col gap-4 sm:gap-8 "
       >
         <motion.h3
           // variants={BoxParentVariants}
-          className="playfair-display text-2xl sm:text-3xl font-semibold"
+          className="playfair-display text-2xl sm:text-3xl font-semibold "
         >
           Our Values
         </motion.h3>

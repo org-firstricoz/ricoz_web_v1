@@ -3,7 +3,8 @@ import { motion } from "framer-motion";
 export default function ProjectWrapper({
   img,
   span,
-  title
+  title,
+  description,
 }: // title,
 // description,
 {
@@ -20,12 +21,13 @@ export default function ProjectWrapper({
 
       className={`relative ${
         span == "1" ? "row-span-1" : "row-span-2"
-      }  overflow-hidden p-4 border`}
+      }  overflow-hidden`}
     >
       <div className="relative h-full">
         <img src={img} className=" h-full object-cover w-full" alt="" />
-        <div className="absolute bg-gradient-to-t from-black via-black/70 bottom-0 uppercase text-white w-full pb-4 pt-6 px-4 left-0">
-          {title}
+        <div className="absolute bg-gradient-to-t from-black via-black/70 bottom-0  text-white w-full  pb-4 pt-6 px-4 left-0">
+          <div className="font-medium text-lg uppercase">{title}</div>
+          <div className="text-xs text-white/60">{description}</div>
         </div>
       </div>
       {/* <motion.div
