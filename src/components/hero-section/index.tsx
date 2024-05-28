@@ -21,10 +21,10 @@ export default function HeroSection() {
   return (
     <motion.div
       style={{
-        background: `url(${SLIDES[currentSlideIndex].bg}) no-repeat center center fixed `,
+        background: `url(${SLIDES[currentSlideIndex].bg}) no-repeat left top fixed `,
         WebkitBackgroundSize: "cover",
       }}
-      className="text-white flex bg-cover object-cover relative overflow-hidden"
+      className="text-white flex bg-cover bg-left object-cover relative overflow-hidden"
       // initial={{ opacity: 0 }}
       // whileInView={{ opacity: 1, transition: { duration: 0.6 } }}
     >
