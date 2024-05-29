@@ -9,63 +9,63 @@ const PROJECTS:Array<ProjectType> = [
   {
     title: "Super Like",
     description:
-      "Lorem ipsum dolo dolor in in voluptate velit esse cillum dolore. epteur sint oat cupidatat Businmes",
+      "Custom online store with integrated payment gateway and inventory management.",
     span: "2",
     img: "proj1.jpg",
   },
   {
     title: "Space Travel",
     description:
-      "Lorem ipsum dolo dolor in in voluptate velit esse cillum dolore. epteur sint oat cupidatat Businmes",
+      "Responsive blog with SEO optimization and social media integration.",
     span: "1",
     img: "proj3.png",
   },
   {
     title: "Ticket Book",
     description:
-      "Lorem ipsum dolo dolor in in voluptate velit esse cillum dolore. epteur sint oat cupidatat Businmes",
+      "Creative portfolio showcasing projects with interactive galleries and smooth animations.",
     span: "1",
     img: "proj4.png",
   },
   {
     title: "Fintech App",
     description:
-      "Lorem ipsum dolo dolor in in voluptate velit esse cillum dolore. epteur sint oat cupidatat Businmes",
+      "Dynamic event booking and management portal with real-time updates and notifications.",
     span: "1",
     img: "proj7.jpg",
   },
   {
     title: "Healify",
     description:
-      "Lorem ipsum dolo dolor in in voluptate velit esse cillum dolore. epteur sint oat cupidatat Businmes",
+      "Online learning platform with video tutorials, quizzes, and progress tracking.",
     span: "1",
     img: "proj2.png",
   },
   {
     title: "Project2",
     description:
-      "Lorem ipsum dolo dolor in in voluptate velit esse cillum dolore. epteur sint oat cupidatat Businmes",
+      "Responsive blog with SEO optimization and social media integration.",
     span: "1",
     img: "fp2.png",
   },
   {
     title: "Project3",
     description:
-      "Lorem ipsum dolo dolor in in voluptate velit esse cillum dolore. epteur sint oat cupidatat Businmes",
+      "Online learning platform with video tutorials, quizzes, and progress tracking.",
     span: "1",
     img: "fp3.png",
   },
   {
     title: "Project4",
     description:
-      "Lorem ipsum dolo dolor in in voluptate velit esse cillum dolore. epteur sint oat cupidatat Businmes",
+      "Dynamic event booking and management portal with real-time updates and notifications.",
     span: "1",
     img: "fp4.png",
   },
   {
     title: "Project5",
     description:
-      "Lorem ipsum dolo dolor in in voluptate velit esse cillum dolore. epteur sint oat cupidatat Businmes",
+      "Custom online store with integrated payment gateway and inventory management.",
     span: "1",
     img: "fp5.png",
   },

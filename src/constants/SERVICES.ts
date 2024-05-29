@@ -36,7 +36,7 @@ const SERVICES = [
     {
       title: "App Development",
       description:
-        "Lorem ipsum dolo dolor in in voluptate velit esse cillum dolore. epteur sint oat cupidatat Businmes",
+        "Our team of skilled developers is dedicated to delivering innovative and user-friendly apps tailored to meet your specific business needs and objectives.",
       img: "service2.png",
       keyFeatures: [
         "Customized website designs",
@@ -70,7 +70,7 @@ const SERVICES = [
     {
       title: "Graphic Design",
       description:
-        "Lorem ipsum dolo dolor in in voluptate velit esse cillum dolore. epteur sint oat cupidatat Businmes",
+        "we specialize in delivering stunning graphic design services that captivate your audience and elevate your brand.",
       img: "service3.png",
       keyFeatures: [
           "Customized website designs",
@@ -104,7 +104,7 @@ const SERVICES = [
     {
       title: "Ads Management",
       description:
-        "Lorem ipsum dolo dolor in in voluptate velit esse cillum dolore. epteur sint oat cupidatat Businmes",
+        "we specialize in providing comprehensive ads management services that maximize your online advertising efforts and drive measurable results.",
       img: "service4.png",
       keyFeatures: [
           "Customized website designs",
@@ -138,7 +138,7 @@ const SERVICES = [
     {
       title: "SEO Optimization",
       description:
-        "Lorem ipsum dolo dolor in in voluptate velit esse cillum dolore. epteur sint oat cupidatat Businmes",
+        "We specialize in providing expert Search Engine Optimization (SEO) services that enhance your online visibility, drive organic traffic, and boost your search engine rankings",
       img: "service5.png",
       keyFeatures: [
           "Customized website designs",
@@ -172,7 +172,7 @@ const SERVICES = [
     {
       title: "Google Adword",
       description:
-        "Lorem ipsum dolo dolor in in voluptate velit esse cillum dolore. epteur sint oat cupidatat Businmes",
+        "we specialize in delivering expert Google AdWords management services that drive targeted traffic, increase conversions, and maximize your return on investment",
       img: "service6.png",
       keyFeatures: [
           "Customized website designs",

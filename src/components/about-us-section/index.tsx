@@ -1,6 +1,7 @@
 
 import FillButton from "../fill-button";
 import { motion } from "framer-motion";
+import SectionHeading from "../section-heading";
 
 export default function AboutUsSection() {
   return (
@@ -10,10 +11,8 @@ export default function AboutUsSection() {
         // whileInView="visible"
         className="text-black space-y-8"
       >
-        <motion.div className="text-2xl sm:text-4xl font-semibold playfair-display text-rz-darkgray">
-          About Us
-        </motion.div>
-        <motion.div className="max-w-[80rem] text-sm sm:text-base text-rz-lightgray tracking-[1px]">
+        <SectionHeading title="About us"/>
+        <motion.div className="max-w-[80rem] text-sm sm:text-base text-rz-lightgray tracking-[1px] text-center">
           Your Premier Tech Aggregator. In today's rapidly evolving
           technological landscape, staying informed and accessing the latest
           innovations can be challenging. Ricoz addresses this need by serving
@@ -21,7 +20,7 @@ export default function AboutUsSection() {
           a business seeking innovative solutions or an individual looking to
           stay updated on the latest trends, Ricoz has you covered.
         </motion.div>
-        <motion.div>
+        <motion.div className="flex justify-center">
           <FillButton title="LEARN MORE" />
         </motion.div>
       </motion.div>

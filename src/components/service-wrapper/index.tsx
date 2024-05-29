@@ -11,14 +11,14 @@ export default function ServiceWrapper({
 }) {
   return (
     <motion.a
-      className=" flex flex-col items-center p-4 sm:p-8 cursor-pointer border"
+      className=" flex flex-col items-center p-4 sm:p-8 cursor-pointer border shadow"
       href={`/services/${title}`}
     >
       <img className="w-16 h-16 mb-4 sm:mb-8 object-contain" src={img} alt="" />
       <p className="playfair-display text-2xl font-medium text-center mb-2">
         {title}
       </p>
-      <p className="text-black/50 text-center text-sm xl:w-[17rem]">
+      <p className="text-black/50 text-center text-sm">
         {description}
       </p>
     </motion.a>
