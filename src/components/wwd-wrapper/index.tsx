@@ -10,6 +10,7 @@ export type WwdWrapperType = {
   propWidth?: CSSProperties["width"];
   propColor?: CSSProperties["color"];
   propMinWidth?: CSSProperties["minWidth"];
+  des?:string
 };
 
 const WwdWrapper: FunctionComponent<WwdWrapperType> = ({
@@ -20,6 +21,7 @@ const WwdWrapper: FunctionComponent<WwdWrapperType> = ({
   propWidth,
   propColor,
   propMinWidth,
+  des
 }) => {
   const divStyle: CSSProperties = useMemo(() => {
     return {
@@ -66,7 +68,7 @@ const WwdWrapper: FunctionComponent<WwdWrapperType> = ({
             </div>
           </div>
           <div className="self-stretch relative text-base leading-[22.86px] font-poppins text-rz-lightgray">
-            Best Technological Solutions for Your Business
+            {des}
           </div>
         </div>
       </div>

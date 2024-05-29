@@ -15,6 +15,7 @@ export default function WhatWeDoSection() {
           <WwdWrapper
             consultencypng="/wwd1.png"
             businessConsultancy="SaaS Development"
+            des="Our team of experienced developers is dedicated to creating innovative SaaS applications tailored to meet the unique needs of your business."
           />
           <WwdWrapper
             consultencypng="/wwd2.png"
@@ -23,6 +24,7 @@ export default function WhatWeDoSection() {
             propHeight="50px"
             propWidth="50px"
             propMinWidth="unset"
+            des="We are dedicated to helping your business achieve sustainable growth and reach new heights."
           />
           <WwdWrapper
             consultencypng="/wwd3.png"
@@ -31,6 +33,7 @@ export default function WhatWeDoSection() {
             propHeight="50px"
             propWidth="44px"
             propMinWidth="128.4px"
+            des="Our dedicated support team is committed to delivering prompt, reliable, and comprehensive assistance to address your needs and keep your operations running without interruption."
           />
         </div>
       </section>
