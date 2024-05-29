@@ -3,7 +3,7 @@ import OurExpertiseButton from "../our-expertise-button";
 export default function OutExpertiseWrapper({
   buttonTitle,
   des,
-  img,
+  // img,
   subtitle,
   title,
 }: {
