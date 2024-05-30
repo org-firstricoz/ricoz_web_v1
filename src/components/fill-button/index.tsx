@@ -7,6 +7,7 @@ export default function FillButton({
   onClick,
   variant = "primary-fill",
   children,
+  rounded = "none",
 }: {
   title: string;
   onClick?: () => void;
@@ -16,22 +17,29 @@ export default function FillButton({
     | "white-fill"
     | "white-bordered";
   children?: React.JSX.Element;
+  rounded?: "sm" | "md" | "lg" | "none";
 }) {
   return (
     <motion.button
       onClick={onClick}
-      whileTap={{scale:0.9}}
+      whileTap={{ scale: 0.9 }}
       className={cn(
         `rounded-none text-nowrap border-2 tracking-[1px] font-normal px-8 py-4 text-sm sm:text-base flex gap-2 transition-colors duration-300`,
         {
-          "bg-rz-lategray text-white hover:text-rz-lategray hover:border-rz-lategray":
+          "bg-rz-lategray text-white border-rz-lategray sm:hover:text-rz-lategray hover:border-rz-lategray sm:hover:bg-transparent":
             variant === "primary-fill",
-          "hover:bg-rz-lategray hover:text-black text-rz-lategray border-rz-lategray":
+          "sm:hover:bg-rz-lategray sm:hover:text-black text-rz-lategray border-rz-lategray":
             variant === "primary-bordered",
-          "bg-white text-black hover:text-white hover:border-white":
+          "bg-white text-black sm:hover:text-white hover:border-white sm:hover:bg-transparent":
             variant === "white-fill",
-          "hover:bg-white hover:text-black text-white border-white":
+          "sm:hover:bg-white sm:hover:text-black text-white border-white":
             variant === "white-bordered",
+        },
+        {
+          "rounded-sm": rounded === "sm",
+          "rounded-md": rounded === "md",
+          "rounded-lg": rounded === "lg",
+          "rounded-none": rounded === "none",
         }
       )}
     >

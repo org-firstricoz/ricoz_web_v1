@@ -1,4 +1,8 @@
-import { FunctionComponent, useMemo, type CSSProperties } from "react";
+import { motion } from "framer-motion";
+import React, { FunctionComponent, useMemo, type CSSProperties } from "react";
+import cn from "../../utils/cn";
+import FillButton from "../fill-button";
+import ArrowSVG from "../svgs/ArrowSVG";
 
 export type WwdWrapperType = {
   consultencypng?: string;
@@ -10,7 +14,7 @@ export type WwdWrapperType = {
   propWidth?: CSSProperties["width"];
   propColor?: CSSProperties["color"];
   propMinWidth?: CSSProperties["minWidth"];
-  des?:string
+  des?: string;
 };
 
 const WwdWrapper: FunctionComponent<WwdWrapperType> = ({
@@ -19,9 +23,7 @@ const WwdWrapper: FunctionComponent<WwdWrapperType> = ({
   propPadding,
   propHeight,
   propWidth,
-  propColor,
-  propMinWidth,
-  des
+  des,
 }) => {
   const divStyle: CSSProperties = useMemo(() => {
     return {
@@ -36,15 +38,13 @@ const WwdWrapper: FunctionComponent<WwdWrapperType> = ({
     };
   }, [propHeight, propWidth]);
 
-  const businessConsultancyStyle: CSSProperties = useMemo(() => {
-    return {
-      color: propColor,
-      minWidth: propMinWidth,
-    };
-  }, [propColor, propMinWidth]);
+  const [hovered, setHovered] = React.useState(false);
 
   return (
-    <div
+    <motion.div
+      onHoverStart={() => setHovered(true)}
+      onHoverEnd={() => setHovered(false)}
+      whileHover={{ borderRadius: 10, backgroundColor: "#09090b" }}
       className="flex-1 bg-white cursor-pointer shadow-[0px_0px_5px_rgba(35,_37,_41,_0.1)] overflow-hidden flex flex-row items-start justify-start min-w-[270px] max-w-full text-center text-xl text-rz-lategray font-playfair-display"
       style={divStyle}
     >
@@ -58,11 +58,16 @@ const WwdWrapper: FunctionComponent<WwdWrapperType> = ({
             style={consultencypngIconStyle}
           />
         </div>
-        <div className="self-stretch flex flex-col items-end justify-start gap-[26px]">
+        <div className="self-stretch flex flex-col items-center justify-start gap-[26px]">
           <div className="self-stretch flex flex-row items-start justify-end">
             <div
-              className="flex-1 relative leading-[22px] capitalize font-medium mq450:text-base playfair-display mq450:leading-[18px]"
-              style={businessConsultancyStyle}
+              className={cn(
+                `flex-1 relative leading-[22px]  capitalize font-medium mq450:text-base playfair-display mq450:leading-[18px]`,
+                {
+                  "text-rz-lategray": !hovered,
+                  "text-white": hovered,
+                }
+              )}
             >
               {businessConsultancy}
             </div>
@@ -70,9 +75,14 @@ const WwdWrapper: FunctionComponent<WwdWrapperType> = ({
           <div className="self-stretch relative text-base leading-[22.86px] font-poppins text-rz-lightgray">
             {des}
           </div>
+          {hovered && (
+            <FillButton title="" rounded="lg" variant="white-fill">
+              <ArrowSVG />
+            </FillButton>
+          )}
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 
