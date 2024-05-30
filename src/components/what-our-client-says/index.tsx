@@ -17,37 +17,43 @@ export default function WhatOurClientSays() {
     return () => clearInterval(slideInterval);
   }, [currentIndex]);
   return (
-    <div className="flex flex-col gap-8 lg:px-40 md:px-24 sm:px-16 px-4 items-center sm:py-24 py-8 text-black bg-rz-lightblue">
+    <div className="flex flex-col gap-8 lg:px-40 md:px-24 sm:px-16 px-4 items-center sm:py-24 py-8 text-black bg-rz-lightblue ">
       <SectionHeading title="What are Clients Says" />
-      <TestimonialWrapper
-        key={`TESIMONY_${0}`}
-        img={TESTIMONIALS[currentIndex].img}
-        name={TESTIMONIALS[currentIndex].name}
-        profession={TESTIMONIALS[currentIndex].profession}
-        testimony={TESTIMONIALS[currentIndex].testimony}
-        span={TESTIMONIALS[currentIndex].span}
-      />
-      <div className="flex items-center gap-10">
-        <div
-          onClick={() =>currentIndex>0 && setCurrentIndex((x) => x - 1)}
-          className="-rotate-[135deg] bg-rz-darkgreen cursor-pointer p-2 rounded-full text-white"
-        >
-          <ArrowSVG />
-        </div>
-        <Pagination
-          pagesCount={TESTIMONIALS.length}
-          index={currentIndex}
-          isDark
+      <div className="lg:hidden flex flex-col gap-8 items-center">
+        <TestimonialWrapper
+          key={`TESIMONY_${0}`}
+          img={TESTIMONIALS[currentIndex].img}
+          name={TESTIMONIALS[currentIndex].name}
+          profession={TESTIMONIALS[currentIndex].profession}
+          testimony={TESTIMONIALS[currentIndex].testimony}
+          span={TESTIMONIALS[currentIndex].span}
         />
-        <div
-          onClick={() => currentIndex<TESTIMONIALS.length-1 ? setCurrentIndex((x) => x + 1) : setCurrentIndex(0)}
-          className="rotate-45 bg-rz-darkgreen cursor-pointer p-2 rounded-full text-white"
-        >
-          <ArrowSVG />
+        <div className="flex  items-center gap-10">
+          <div
+            onClick={() => currentIndex > 0 && setCurrentIndex((x) => x - 1)}
+            className="-rotate-[135deg] bg-rz-darkgreen cursor-pointer p-2 rounded-full text-white"
+          >
+            <ArrowSVG />
+          </div>
+          <Pagination
+            pagesCount={TESTIMONIALS.length}
+            index={currentIndex}
+            isDark
+          />
+          <div
+            onClick={() =>
+              currentIndex < TESTIMONIALS.length - 1
+                ? setCurrentIndex((x) => x + 1)
+                : setCurrentIndex(0)
+            }
+            className="rotate-45 bg-rz-darkgreen cursor-pointer p-2 rounded-full text-white"
+          >
+            <ArrowSVG />
+          </div>
         </div>
       </div>
 
-      {/* <div className="grid lg:grid-cols-7 md:grid-cols-2 grid-col-1 gap-4 sm:gap-8">
+      <div className="lg:grid hidden grid-cols-7 gap-4 sm:gap-8">
         {TESTIMONIALS.map((testimonial, i) => (
           <TestimonialWrapper
             key={`TESIMONY_${i}`}
@@ -58,7 +64,7 @@ export default function WhatOurClientSays() {
             span={testimonial.span}
           />
         ))}
-      </div> */}
+      </div>
     </div>
   );
 }
