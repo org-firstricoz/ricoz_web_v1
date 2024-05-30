@@ -4,6 +4,7 @@ import { SLIDES } from "./constants";
 import { motion } from "framer-motion";
 import ArrowSVG from "../svgs/ArrowSVG";
 import Pagination from "../pagination";
+import FillButton from "../fill-button";
 // import { childVariants, parentVariants } from "./variants";
 
 export default function HeroSection() {
@@ -50,16 +51,14 @@ export default function HeroSection() {
           businesses powered by beautifully designed and engineered software and
           technological solutions.
         </motion.h5>
-        <div className="border-2 border-rz-lightblue font-medium py-4 px-6 hover:bg-white hover:text-black cursor-pointer flex gap-3">
-          Know more
+        <FillButton title="Know more" variant="white-bordered">
           <div className="rotate-45">
             <ArrowSVG />
           </div>
-        </div>
+        </FillButton>
         {/* <BlueButtonInput /> */}
         <div className="mt-8">
-        <Pagination index={currentSlideIndex} pagesCount={SLIDES.length}/>
-
+          <Pagination index={currentSlideIndex} pagesCount={SLIDES.length} />
         </div>
       </motion.div>
     </motion.div>
