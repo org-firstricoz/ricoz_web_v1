@@ -15,7 +15,7 @@ export default function TestimonialWrapper({
 }) {
   return (
     <div
-      className={cn("flex xl:flex-row flex-col items-center shadow1", {
+      className={cn("flex flex-col items-center shadow1", {
         " lg:col-span-4 col-span-1": span === 4,
         " lg:col-span-3 col-span-1": span === 3,
       })}
@@ -23,7 +23,7 @@ export default function TestimonialWrapper({
       <div className="flex flex-col items-center  p-4 sm:p-8 ">
         <img
           src={img}
-          className="border-2 border-[#00AC59] rounded-full"
+          className="border-2 border-[#00AC59] rounded-full w-32 object-cover h-32"
           alt=""
         />
 
