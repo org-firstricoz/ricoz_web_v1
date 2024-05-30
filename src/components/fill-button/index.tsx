@@ -15,7 +15,8 @@ export default function FillButton({
     | "primary-fill"
     | "primary-bordered"
     | "white-fill"
-    | "white-bordered";
+    | "white-bordered"
+    | "light-green-fill";
   children?: React.JSX.Element;
   rounded?: "sm" | "md" | "lg" | "none";
 }) {
@@ -32,8 +33,11 @@ export default function FillButton({
             variant === "primary-bordered",
           "bg-white text-black sm:hover:text-white hover:border-white sm:hover:bg-transparent":
             variant === "white-fill",
-          "sm:hover:bg-white sm:hover:text-black text-white border-white":
+            "sm:hover:bg-white sm:hover:text-black text-white border-white":
             variant === "white-bordered",
+            "bg-[#3db56d] text-white sm:hover:text-[#3db56d] border-[#3db56d] sm:hover:bg-transparent":
+              variant === "light-green-fill",
+          
         },
         {
           "rounded-sm": rounded === "sm",

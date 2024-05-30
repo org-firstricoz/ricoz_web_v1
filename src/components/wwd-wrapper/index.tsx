@@ -58,11 +58,11 @@ const WwdWrapper: FunctionComponent<WwdWrapperType> = ({
             style={consultencypngIconStyle}
           />
         </div>
-        <div className="self-stretch flex flex-col items-center justify-start gap-[26px]">
-          <div className="self-stretch flex flex-row items-start justify-end">
+        <motion.div className="self-stretch flex flex-col items-center justify-start gap-[26px]">
+          <div className="self-stretch flex flex-row items-start justify-end transition-all">
             <div
               className={cn(
-                `flex-1 relative leading-[22px]  capitalize font-medium mq450:text-base playfair-display mq450:leading-[18px]`,
+                `flex-1 relative leading-[22px] text-2xl capitalize font-medium mq450:text-base playfair-display mq450:leading-[18px]`,
                 {
                   "text-rz-lategray": !hovered,
                   "text-white": hovered,
@@ -72,7 +72,10 @@ const WwdWrapper: FunctionComponent<WwdWrapperType> = ({
               {businessConsultancy}
             </div>
           </div>
-          <div className="self-stretch relative text-base leading-[22.86px] font-poppins text-rz-lightgray">
+          <div className={cn("self-stretch relative text-sm leading-[22.86px] font-poppins font-medium",{
+            "text-rz-lategray/60": !hovered,
+            "text-white/60": hovered,
+          })}>
             {des}
           </div>
           {hovered && (
@@ -80,7 +83,7 @@ const WwdWrapper: FunctionComponent<WwdWrapperType> = ({
               <ArrowSVG />
             </FillButton>
           )}
-        </div>
+        </motion.div>
       </div>
     </motion.div>
   );
