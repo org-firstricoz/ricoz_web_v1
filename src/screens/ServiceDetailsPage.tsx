@@ -3,8 +3,6 @@ import Navbar from "../components/navbar";
 import SERVICES from "../constants/SERVICES";
 import Footer from "../components/footer";
 import LetsStartContainer from "../components/lets-start-container";
-import FillButton from "../components/fill-button";
-import { motion } from "framer-motion";
 
 export default function ServiceDetailsPage() {
   const { serviceName } = useParams();
@@ -59,27 +57,6 @@ export default function ServiceDetailsPage() {
                       </div>
                     ))}
                   </div>
-                </div>
-                <div className="grid md:grid-cols-2 grid-cols-1 mt-8 gap-4">
-                  <motion.div whileHover={{scale:1.05}} className="cursor-pointer border lg:p-8 sm:p-4 p-4 flex flex-col gap-4">
-                    <h3 className="font-semibold md:text-3xl sm:text-2xl text-xl playfair-display">Professional Package</h3>
-                    <h4 className="sm:text-base text-sm">Ideal for businesses looking to expand their online presence and functionality.</h4>
-                    <h6 className="font-semibold text-3xl">30,000Rs</h6>
-                    {
-                      service.professionalPackageKeypoints.map((point)=>(
-                        <li className=" lg:text-base md:text-sm sm:text-base text-xs">{point}</li>
-                      ))
-                    }
-                  </motion.div>
-                  <motion.div whileHover={{scale:1.05}} className="cursor-pointer border lg:p-8 sm:p-4 p-4 flex flex-col gap-4">
-                    <h3 className="font-semibold md:text-3xl sm:text-2xl text-xl playfair-display">Enterprise Package</h3>
-                    <h4 className="sm:text-base text-sm">Comprehensive solution for businesses requiring extensive branding and design services.</h4>
-                    <h4 className="text-2xl font-semibold">Custom Quote</h4>
-                    <div className="w-[20rem]">
-                    <FillButton title="Contact Us"/>
-
-                    </div>
-                  </motion.div>
                 </div>
               </div>
             )
