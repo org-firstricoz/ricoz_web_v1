@@ -9,7 +9,6 @@ import { NAVLINKS } from "./constants";
 import Menu from "./Menu";
 import { motion } from "framer-motion";
 import NavLink from "./NavLink";
-import Logo from "../logo";
 
 /**
  * A navigation bar component.
@@ -39,7 +38,7 @@ export default function FloatingNavBar(): React.JSX.Element {
       initial={{ opacity: 0 }}
       className="bg-rz-lategray h-16 flex fixed top-0 z-30 justify-between pb-2 w-full items-center lg:px-40 md:px-24 sm:px-16 px-4"
     >
-      <Logo />
+      <img src="ricozLogo.png" className="h-10" alt="" />
       <div className="hidden md:flex gap-6 lg:gap-10">
         {NAVLINKS.map((navlink, i) => (
           <NavLink
