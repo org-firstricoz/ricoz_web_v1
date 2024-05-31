@@ -5,9 +5,11 @@ import { motion } from "framer-motion";
 import ArrowSVG from "../svgs/ArrowSVG";
 import Pagination from "../pagination";
 import FillButton from "../fill-button";
+import { useNavigate } from "react-router-dom";
 // import { childVariants, parentVariants } from "./variants";
 
 export default function HeroSection() {
+  const navigate = useNavigate()
   const [currentSlideIndex, setCurrentSlideIndex] = React.useState(0);
   React.useEffect(() => {
     console.log(currentSlideIndex);
@@ -51,7 +53,7 @@ export default function HeroSection() {
           businesses powered by beautifully designed and engineered software and
           technological solutions.
         </motion.h5>
-        <FillButton title="Know more" variant="white-bordered">
+        <FillButton onClick={()=>navigate('/get-started')} title="Get Started" variant="white-bordered">
           <div className="rotate-45">
             <ArrowSVG />
           </div>

@@ -6,6 +6,7 @@ import ContactUsPage from "./screens/ContactUsPage";
 import ServiceDetailsPage from "./screens/ServiceDetailsPage";
 import CareersPage from "./screens/CareersPage";
 import BlogPage from "./screens/BlogPage";
+import GetStarted from "./screens/GetStarted";
 
 export default function App(): React.JSX.Element {
   return (
@@ -17,6 +18,7 @@ export default function App(): React.JSX.Element {
         <Route path="/contact" element={<ContactUsPage />} />
         <Route path="/careers" element={<CareersPage />} />
         <Route path="/blog" element={<BlogPage />} />
+        <Route path="/get-started" element={<GetStarted/>} />
       </Routes>
     </BrowserRouter>
   );

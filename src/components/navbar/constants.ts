@@ -27,28 +27,40 @@ export const NAVLINKS: Array<INavLink> = [
     dropdown: true,
     dropdownLinks: [
       {
-        title: "Web Development",
-        href: "services/Web Development",
+        title: "Technical Documentation",
+        href: "services/Technical Documentation",
       },
       {
-        title: "App Development",
-        href: "services/App Development",
+        title: "Archietecture Design",
+        href: "services/Archietecture Design",
       },
       {
-        title: "Graphic Design",
-        href: "services/Graphic Design",
+        title: "UX Design",
+        href: "services/UX Design",
       },
       {
-        title: "Ads Management",
-        href: "services/Ads Management",
+        title: "UI Design",
+        href: "services/UI Design",
       },
       {
-        title: "SEO Optimization",
-        href: "services/SEO Optimization",
+        title: "Front End Development",
+        href: "services/Front End Development",
       },
       {
-        title: "Google Adword",
-        href: "services/Google Adword",
+        title: "Back End Development",
+        href: "services/Back End Development",
+      },
+      {
+        title: "Testing",
+        href: "services/Testing",
+      },
+      {
+        title: "Maintenance",
+        href: "services/Maintenance",
+      },
+      {
+        title: "IT Security",
+        href: "services/IT Security",
       },
     ],
   },
