@@ -1,8 +1,20 @@
 import React from "react";
 import ChevronSVGBig from "../../svgs/ChevronSVGBig";
+import toast from "react-hot-toast";
 
 export default function NewsLetter() {
   const [expand, setExpand] = React.useState(false);
+  const [email, setEmail] = React.useState("");
+
+  const handleSubmit = ()=>{
+    if(email==="" || !email.includes("@")){
+      toast.error("Please Enter a valid Email")
+    }
+    else {
+      
+      toast.success("Newsletter Subscribed")
+    }
+  }
   return (
     <div className="lg:col-span-2 col-span-1 ">
       <div
@@ -42,10 +54,16 @@ export default function NewsLetter() {
         <div className="flex">
           <input
             type="text"
+            name="email"
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
             placeholder="Enter Your Email"
             className="flex-1 px-4 min-w-0  placeholder:text-white bg-transparent border border-r-0"
           />
-          <div className="w-16 h-16 bg-rz-lategray flex justify-center items-center">
+          <div
+            onClick={handleSubmit}
+            className="w-16 h-16 cursor-pointer bg-rz-lategray flex justify-center items-center"
+          >
             GO
           </div>
         </div>

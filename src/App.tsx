@@ -7,6 +7,7 @@ import ServiceDetailsPage from "./screens/ServiceDetailsPage";
 import CareersPage from "./screens/CareersPage";
 import BlogPage from "./screens/BlogPage";
 import GetStarted from "./screens/GetStarted";
+import { Toaster } from "react-hot-toast";
 
 export default function App(): React.JSX.Element {
   return (
@@ -20,6 +21,7 @@ export default function App(): React.JSX.Element {
         <Route path="/blog" element={<BlogPage />} />
         <Route path="/get-started" element={<GetStarted/>} />
       </Routes>
+        <Toaster position="bottom-right"/>
     </BrowserRouter>
   );
 }

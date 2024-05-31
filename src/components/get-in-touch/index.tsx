@@ -1,3 +1,4 @@
+import toast from "react-hot-toast";
 import FillButton from "../fill-button";
 import SendSVG from "../svgs/SendSVG";
 import RZTextArea from "./RZTextArea";
@@ -25,7 +26,7 @@ export default function GetInTouch() {
           </div>
           <RZTextArea placeholder="Message" />
           <div className="w-1/2">
-            <FillButton title="Submit Now" variant="primary-fill" >
+            <FillButton title="Submit Now" onClick={()=>toast.success('Message Sent Successfully')} variant="primary-fill" >
               <SendSVG/>
             </FillButton>
           </div>
