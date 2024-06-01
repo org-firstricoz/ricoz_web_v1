@@ -1,5 +1,6 @@
 import AboutUsSection from "../components/about-us-section";
 import AchievementStrip from "../components/achievement-strip";
+import FAQSection from "../components/faq-section";
 import Features from "../components/features";
 import Footer from "../components/footer";
 import GetInTouch from "../components/get-in-touch";
@@ -34,6 +35,7 @@ export default function LandingPage() {
       <OurFinishedProjects/>
       <GetInTouch/>
       <WhatOurClientSays/>
+      <FAQSection/>
       <LetsStartContainer/>
       <Footer/>
     </div>
