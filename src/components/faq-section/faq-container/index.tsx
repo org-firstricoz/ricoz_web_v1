@@ -15,7 +15,7 @@ export default function FAQContainer({
     <div className="p-3 bg-white rounded-md shadow2">
       <div
         onClick={() => setExpand((x) => !x)}
-        className="flex justify-between cursor-pointer"
+        className="flex justify-between gap-2 cursor-pointer"
       >
         <p className="font-semibold text-sm text-black/80">{question}</p>
         <div>{expand ? <MinusSVG /> : <PlusSVG />}</div>
