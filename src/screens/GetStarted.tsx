@@ -38,7 +38,7 @@ export default function GetStarted() {
     
     console.log('Data sent to API:', dataToSend);
 
-    const response = await fetch("http://localhost:3000/api/v1/add/getStart/user/query", {
+    const response = await fetch("https://ricoz-web.onrender.com/api/v1/add/getStart/user/query", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
