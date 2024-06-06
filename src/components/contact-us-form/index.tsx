@@ -1,14 +1,50 @@
+import { useState, FormEvent } from "react";
 import FillButton from "../fill-button";
 import SectionHeading from "../section-heading";
 import MailSVG from "../svgs/MailSVG";
 import PhoneSVG from "../svgs/PhoneSVG";
 import PinSVG from "../svgs/PinSVG";
 import SendSVG from "../svgs/SendSVG";
+import toast from "react-hot-toast";
 
-export default function ConatactUsForm() {
+interface ContactUsFormState {
+  email: string;
+  message: string;
+  success: boolean;
+}
+
+export default function ContactUsForm() {
+  const [formData, setFormData] = useState<ContactUsFormState>({
+    email: "",
+    message: "",
+    success: false,
+  });
+
+  const handleSubmit = async (e: FormEvent) => {
+    e.preventDefault();
+    const response = await fetch("https://ricoz-web.onrender.com/api/v1/add/user/message", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({ email: formData.email, message: formData.message }),
+    });
+    if (response.ok) {
+      toast.success('Message Sent Successfully');
+      setFormData({ email: "", message: "", success: true });
+    } else {
+      console.error("Failed to send message");
+      toast.error('Failed to send message');
+    }
+  };
+
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+    const { name, value } = e.target;
+    setFormData((prev) => ({ ...prev, [name]: value, success: false }));
+  };
+
   return (
     <div className="bg-[url(https://res.cloudinary.com/dlxpf7d8c/image/upload/v1715794224/wksr9bdl2skux962kyq7.png)] flex justify-center">
-      {/* <img src="contact-form-bg.png" className="w-full" alt="" /> */}
       <div className="flex flex-col items-center justify-center gap-8 bg-black/30 px-4 sm:px-16 md:px-24 lg:px-40 py-24 w-full">
         <SectionHeading
           title="Contact Us"
@@ -42,20 +78,29 @@ export default function ConatactUsForm() {
           </div>
           <div className="flex flex-col gap-6 xl:col-span-2">
             <h3 className="text-2xl font-medium">Leave Us a Message Here</h3>
-            <input
-              type="text"
-              placeholder="Enter Your Email"
-              className="p-4 rounded-lg text-black focus:outline-none"
-            />
-            <textarea
-              placeholder="Enter Your Message..."
-              className="bg-white h-[10rem] rounded-lg text-black p-4 focus:outline-none"
-            ></textarea>
-            <div>
-              <FillButton title="SEND MESSAGE" variant="primary-fill">
-                <SendSVG />
-              </FillButton>
-            </div>
+            <form onSubmit={handleSubmit} className="flex flex-col gap-6">
+              <input
+                type="text"
+                name="email"
+                placeholder="Enter Your Email"
+                value={formData.email}
+                onChange={handleChange}
+                className="p-4 rounded-lg text-black focus:outline-none"
+              />
+              <textarea
+                name="message"
+                placeholder="Enter Your Message..."
+                value={formData.message}
+                onChange={handleChange}
+                className="bg-white h-[10rem] rounded-lg text-black p-4 focus:outline-none"
+              ></textarea>
+              <div>
+                <FillButton title="SEND MESSAGE" variant="primary-fill">
+                  <SendSVG />
+                </FillButton>
+              </div>
+              
+            </form>
           </div>
         </div>
       </div>
