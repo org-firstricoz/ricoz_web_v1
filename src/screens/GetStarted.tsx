@@ -33,12 +33,12 @@ export default function GetStarted() {
       lastname: formData.lastName,
       email: formData.email,
       phone: formData.phoneNumber,
-      interestedIn: selectedServiceTitle,
+      interestedIn: selectedServiceTitle.toUpperCase(), // Convert to uppercase
     };
     
     console.log('Data sent to API:', dataToSend);
 
-    const response = await fetch("https://ricoz-web.onrender.com/api/v1/add/getStart/user/query", {
+    const response = await fetch("http://localhost:3000/api/v1/add/getStart/user/query", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -56,6 +56,12 @@ export default function GetStarted() {
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const { name, value } = e.target;
+
+    // Validate phone number field to allow only numbers
+    if (name === "phoneNumber" && !/^\d*$/.test(value)) {
+      return;
+    }
+
     setFormData((prev) => ({ ...prev, [name]: value, success: false }));
   };
 
@@ -114,6 +120,7 @@ export default function GetStarted() {
         />
         <TextField
           name="phoneNumber"
+          type="tel" // Use "tel" type to avoid arrows
           className="md:w-[30rem] w-full"
           placeholder="What's your phone number"
           label="Phone Number"
@@ -121,6 +128,7 @@ export default function GetStarted() {
           required
           value={formData.phoneNumber}
           onChange={handleChange}
+          inputProps={{ pattern: "[0-9]*" }} // Ensure only numeric input
         />
         <div>
           <p className="font-medium text-black mt-4 mb-8">
@@ -139,10 +147,9 @@ export default function GetStarted() {
             ))}
           </div>
         </div>
-        <FillButton title="Send Query" rounded="lg">
+        <FillButton type="submit" title="Send Query" rounded="lg">
           <SendSVG />
         </FillButton>
-        
       </form>
     </div>
   );

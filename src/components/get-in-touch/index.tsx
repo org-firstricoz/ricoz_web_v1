@@ -36,7 +36,7 @@ export default function GetInTouch() {
     
     console.log('Data sent to API:', dataToSend);
 
-    const response = await fetch("https://ricoz-web.onrender.com/api/v1/add/user/message", {
+    const response = await fetch("http://localhost:3000/api/v1/add/user/message", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
