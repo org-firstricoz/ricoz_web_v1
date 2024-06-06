@@ -33,7 +33,7 @@ export default function GetStarted() {
       lastname: formData.lastName,
       email: formData.email,
       phone: formData.phoneNumber,
-      interestedIn: selectedServiceTitle.toUpperCase(), // Convert to uppercase
+      interestedIn: selectedServiceTitle.toUpperCase(), 
     };
     
     console.log('Data sent to API:', dataToSend);
@@ -57,7 +57,7 @@ export default function GetStarted() {
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const { name, value } = e.target;
 
-    // Validate phone number field to allow only numbers
+    
     if (name === "phoneNumber" && !/^\d*$/.test(value)) {
       return;
     }
@@ -120,7 +120,7 @@ export default function GetStarted() {
         />
         <TextField
           name="phoneNumber"
-          type="tel" // Use "tel" type to avoid arrows
+          type="tel" 
           className="md:w-[30rem] w-full"
           placeholder="What's your phone number"
           label="Phone Number"
@@ -128,7 +128,7 @@ export default function GetStarted() {
           required
           value={formData.phoneNumber}
           onChange={handleChange}
-          inputProps={{ pattern: "[0-9]*" }} // Ensure only numeric input
+          inputProps={{ pattern: "[0-9]*" }} 
         />
         <div>
           <p className="font-medium text-black mt-4 mb-8">
@@ -147,7 +147,7 @@ export default function GetStarted() {
             ))}
           </div>
         </div>
-        <FillButton type="submit" title="Send Query" rounded="lg">
+        <FillButton  title="Send Query" rounded="lg">
           <SendSVG />
         </FillButton>
       </form>
