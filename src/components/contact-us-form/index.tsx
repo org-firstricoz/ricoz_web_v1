@@ -5,6 +5,7 @@ import MailSVG from "../svgs/MailSVG";
 import PhoneSVG from "../svgs/PhoneSVG";
 import PinSVG from "../svgs/PinSVG";
 import SendSVG from "../svgs/SendSVG";
+import toast from "react-hot-toast";
 
 interface ContactUsFormState {
   email: string;
@@ -29,9 +30,11 @@ export default function ContactUsForm() {
       body: JSON.stringify({ email: formData.email, message: formData.message }),
     });
     if (response.ok) {
+      toast.success('Message Sent Successfully');
       setFormData({ email: "", message: "", success: true });
     } else {
       console.error("Failed to send message");
+      toast.error('Failed to send message');
     }
   };
 
@@ -96,9 +99,7 @@ export default function ContactUsForm() {
                   <SendSVG />
                 </FillButton>
               </div>
-              {formData.success && (
-                <p className="text-white-500 mt-4">Message sent successfully!</p>
-              )}
+              
             </form>
           </div>
         </div>
