@@ -22,7 +22,7 @@ export default function ContactUsForm() {
 
   const handleSubmit = async (e: FormEvent) => {
     e.preventDefault();
-    const response = await fetch("https://ricoz-web.onrender.com/add/user/message", {
+    const response = await fetch("https://ricoz-web.onrender.com/api/v1/add/user/message", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
