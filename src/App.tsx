@@ -6,6 +6,7 @@ import ContactUsPage from "./screens/ContactUsPage";
 import ServiceDetailsPage from "./screens/ServiceDetailsPage";
 import CareersPage from "./screens/CareersPage";
 import BlogPage from "./screens/BlogPage";
+import BlogPostDetail from "./components/BlogPostDetail"; 
 import GetStarted from "./screens/GetStarted";
 import { Toaster } from "react-hot-toast";
 
@@ -19,9 +20,10 @@ export default function App(): React.JSX.Element {
         <Route path="/contact" element={<ContactUsPage />} />
         <Route path="/careers" element={<CareersPage />} />
         <Route path="/blog" element={<BlogPage />} />
-        <Route path="/get-started" element={<GetStarted/>} />
+        <Route path="/blog/:postId" element={<BlogPostDetail />}/>
+        <Route path="/get-started" element={<GetStarted />} />
       </Routes>
-        <Toaster position="bottom-right"/>
+      <Toaster position="bottom-right" />
     </BrowserRouter>
   );
 }
