@@ -7,17 +7,20 @@ import SendSVG from "../svgs/SendSVG";
 import toast from "react-hot-toast";
 import { motion } from "framer-motion";
 
+
 interface ContactUsFormState {
   email: string;
   message: string;
   success: boolean;
 }
 
+
 interface ContactUsFormProps {
   onFormSubmit: () => void;
 }
 
-export default function ContactUsForm({ onFormSubmit }: ContactUsFormProps) {
+
+export default function ContactUsForm() {
   const [formData, setFormData] = useState<ContactUsFormState>({
     email: "",
     message: "",
@@ -28,6 +31,7 @@ export default function ContactUsForm({ onFormSubmit }: ContactUsFormProps) {
     e.preventDefault();
     console.log("Form submitted with data:", formData);
     onFormSubmit(); 
+
     const response = await fetch("https://ricoz-web.onrender.com/api/v1/add/user/message", {
       method: "POST",
       headers: {
@@ -40,6 +44,7 @@ export default function ContactUsForm({ onFormSubmit }: ContactUsFormProps) {
       toast.success('Message Sent Successfully');
       setFormData({ email: "", message: "", success: true });
       
+
     } else {
       console.error("Failed to send message");
       toast.error('Failed to send message');
@@ -73,6 +78,7 @@ export default function ContactUsForm({ onFormSubmit }: ContactUsFormProps) {
         transition={{ duration: 0.5 }}
       >
         <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8 md:gap-16 w-full py-8 md:py-16 px-4 md:px-8 lg:px-16">
+
           <div className="flex flex-col items-start gap-4">
             <h2 className="text-xl md:text-2xl font-medium text-white">Contact Info</h2>
             <div className="flex gap-2 items-center">
