@@ -57,3 +57,89 @@ background-color: rgba(0, 0, 0, 0.982);
 .shadow2{
   box-shadow: rgba(152, 153, 153, 0.2) 0px 2px 8px 0px;
 }
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.animate-fadeIn {
+  animation: fadeIn 0.7s ease-in-out;
+}
+
+@keyframes fly-1 {
+  0% { transform: translateX(-100px) translateY(0) rotate(0deg); }
+  25% { transform: translateX(25vw) translateY(-10vh) rotate(10deg); }
+  50% { transform: translateX(50vw) translateY(10vh) rotate(-10deg); }
+  75% { transform: translateX(75vw) translateY(-10vh) rotate(10deg); }
+  100% { transform: translateX(100vw) translateY(0) rotate(0deg); }
+}
+
+@keyframes fly-2 {
+  0% { transform: translateX(-100px) translateY(0) rotate(0deg); }
+  25% { transform: translateX(30vw) translateY(-15vh) rotate(15deg); }
+  50% { transform: translateX(60vw) translateY(5vh) rotate(-5deg); }
+  75% { transform: translateX(85vw) translateY(-5vh) rotate(5deg); }
+  100% { transform: translateX(100vw) translateY(0) rotate(0deg); }
+}
+
+@keyframes fly-3 {
+  0% { transform: translateX(-100px) translateY(0) rotate(0deg); }
+  25% { transform: translateX(20vw) translateY(-5vh) rotate(5deg); }
+  50% { transform: translateX(40vw) translateY(20vh) rotate(-20deg); }
+  75% { transform: translateX(65vw) translateY(-20vh) rotate(20deg); }
+  100% { transform: translateX(100vw) translateY(0) rotate(0deg); }
+}
+
+@keyframes fly-4 {
+  0% { transform: translateX(-100px) translateY(0) rotate(0deg); }
+  25% { transform: translateX(15vw) translateY(-10vh) rotate(10deg); }
+  50% { transform: translateX(35vw) translateY(10vh) rotate(-10deg); }
+  75% { transform: translateX(55vw) translateY(-15vh) rotate(15deg); }
+  100% { transform: translateX(100vw) translateY(0) rotate(0deg); }
+}
+
+@keyframes fly-5 {
+  0% { transform: translateX(-100px) translateY(0) rotate(0deg); }
+  25% { transform: translateX(40vw) translateY(-20vh) rotate(20deg); }
+  50% { transform: translateX(70vw) translateY(10vh) rotate(-10deg); }
+  75% { transform: translateX(90vw) translateY(-5vh) rotate(5deg); }
+  100% { transform: translateX(100vw) translateY(0) rotate(0deg); }
+}
+
+.animate-fly-1 {
+  animation: fly-1 8s linear infinite;
+}
+
+.animate-fly-2 {
+  animation: fly-2 10s linear infinite;
+}
+
+.animate-fly-3 {
+  animation: fly-3 12s linear infinite;
+}
+
+.animate-fly-4 {
+  animation: fly-4 14s linear infinite;
+}
+
+.animate-fly-5 {
+  animation: fly-5 16s linear infinite;
+}
+
+@keyframes fly-big-plane {
+  0% {
+    transform: translateX(-100%);
+    opacity: 100%;
+  }
+  100% {
+    transform: translateX(500%);
+    opacity: 100%;
+  }
+}
+.animate-big-plane {
+  animation: fly-big-plane 2s linear forwards;
+}
