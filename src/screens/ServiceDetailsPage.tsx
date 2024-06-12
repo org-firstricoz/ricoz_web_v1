@@ -45,7 +45,7 @@ export default function ServiceDetailsPage() {
 
   return (
     <div className="overflow-hidden">
-      <Navbar />
+      <Navbar  />
       {service && (
         <div className="text-black">
           {/* Hero Section */}

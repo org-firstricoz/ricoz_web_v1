@@ -12,7 +12,7 @@ export default function NavLink({
 
   React.useEffect(() => {
     console.log(dropdown);
-  }, [linkHovered]);
+  }, [linkHovered,dropdown]);
   if (dropdown)
     return (
       <div
@@ -45,7 +45,7 @@ export default function NavLink({
           {dropdownLinks?.map((link, i) => (
             <a
               key={`LINK_DROPDOWN_${i}`}
-              className="text-nowrap py-3 border-b font-medium"
+              className="text-nowrap py-3 border-b font-medium " 
               href={link.href}
             >
               {link.title}

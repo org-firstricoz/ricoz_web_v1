@@ -9,6 +9,7 @@ import { NAVLINKS } from "./constants";
 import Menu from "./Menu";
 import NavLink from "./NavLink";
 
+
 /**
  * A navigation bar component.
  * @component
@@ -17,7 +18,7 @@ import NavLink from "./NavLink";
 export default function Navbar(): React.JSX.Element {
   return (
     <nav className="bg-rz-lategray h-16 flex items-center pb-2 w-full justify-between lg:px-40 md:px-24 sm:px-16 px-4">
-      <img src="ricozLogo.png" className="h-10" alt="" />
+      <img src="ricozLogo.png" className="h-10 w-30" alt="" />
       <div className="hidden md:flex gap-6 lg:gap-10">
         {NAVLINKS.map((navlink, i) => (
           <NavLink

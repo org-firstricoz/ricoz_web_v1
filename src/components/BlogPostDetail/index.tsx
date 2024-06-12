@@ -3,6 +3,7 @@ import Navbar from "../navbar";
 import Footer from "../footer";
 import blogPosts from '../../constants/blogPost';
 
+
 type RouteParams = {
     postId: string;
 };
