@@ -45,7 +45,7 @@ export default function ContactUsForm({ onFormSubmit }: ContactUsFormProps) {
       toast.error('Failed to send message');
     }
   } catch (error) {
-    console.error("Failed to send message:", error.message);
+    console.error("Failed to send message:", (error as Error).message);
     toast.error('Failed to send message');
   }
 };
