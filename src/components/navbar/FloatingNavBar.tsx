@@ -9,7 +9,7 @@ import { NAVLINKS } from "./constants";
 import Menu from "./Menu";
 import { motion } from "framer-motion";
 import NavLink from "./NavLink";
-import { RicozIcon } from "./Ricoz-icon";
+
 
 /**
  * A navigation bar component.
