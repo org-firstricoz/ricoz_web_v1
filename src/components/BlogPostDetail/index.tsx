@@ -1,5 +1,6 @@
 import { useParams } from 'react-router-dom';
-import Navbar from "../navbar";
+
+import FloatingNavBar from "../components/navbar/FloatingNavBar";
 import Footer from "../footer";
 import blogPosts from '../../constants/blogPost';
 
@@ -20,7 +21,7 @@ export default function BlogPostDetail() {
     if (!post) {
         return (
             <div>
-                <Navbar />
+                <FloatingNavBar/>
                 <div className="px-8 py-16">
                     <div className='text-black text-center text-8xl'>Post not found</div>
                 </div>
