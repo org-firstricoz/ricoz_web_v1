@@ -40,6 +40,7 @@ export default function ContactUsForm({ onFormSubmit }: ContactUsFormProps) {
       console.log("Message sent successfully");
       toast.success('Message Sent Successfully');
       setFormData({ email: "", message: "", success: true });
+      
     } else {
       console.error("Failed to send message");
       toast.error('Failed to send message');

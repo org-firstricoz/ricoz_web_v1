@@ -1,6 +1,5 @@
 import { useParams } from 'react-router-dom';
-
-import NavBar from "../navbar";
+import Navbar from "../navbar";
 import Footer from "../footer";
 import blogPosts from '../../constants/blogPost';
 
@@ -21,7 +20,7 @@ export default function BlogPostDetail() {
     if (!post) {
         return (
             <div>
-                <NavBar/>
+                <Navbar />
                 <div className="px-8 py-16">
                     <div className='text-black text-center text-8xl'>Post not found</div>
                 </div>
@@ -32,7 +31,7 @@ export default function BlogPostDetail() {
 
     return (
         <div>
-            <NavBar />
+            <Navbar />
             <div className="px-8 py-16">
                 <h1 className="text-5xl text-black font-bold mb-4">{post.title}</h1>
                 <p className="text-sm text-gray-500">By {post.author} on {new Date(post.date).toLocaleDateString()}</p>
