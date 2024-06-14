@@ -25,9 +25,10 @@ export default function ContactUsForm({ onFormSubmit }: ContactUsFormProps) {
   });
 
   const handleSubmit = async (e: FormEvent) => {
-    e.preventDefault();
-    console.log("Form submitted with data:", formData);
-    onFormSubmit(); 
+  e.preventDefault();
+  console.log("Form submitted with data:", formData);
+  onFormSubmit(); 
+  try {
     const response = await fetch("https://ricoz-web.onrender.com/api/v1/add/user/message", {
       method: "POST",
       headers: {
@@ -44,7 +45,11 @@ export default function ContactUsForm({ onFormSubmit }: ContactUsFormProps) {
       console.error("Failed to send message");
       toast.error('Failed to send message');
     }
-  };
+  } catch (error) {
+    console.error("Failed to send message:", (error as Error).message);
+    toast.error('Failed to send message');
+  }
+};
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     const { name, value } = e.target;

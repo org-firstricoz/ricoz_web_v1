@@ -44,7 +44,7 @@ const WwdWrapper: FunctionComponent<WwdWrapperType> = ({
     <motion.div
       onHoverStart={() => setHovered(true)}
       onHoverEnd={() => setHovered(false)}
-      whileHover={{ borderRadius: 10, backgroundColor: "#09090b" }}
+      whileHover={{ borderRadius: 10, backgroundColor: "#799B78" }}
       className="flex-1 bg-white cursor-pointer shadow-[0px_0px_5px_rgba(35,_37,_41,_0.1)] overflow-hidden flex flex-row items-start justify-start min-w-[270px] max-w-full text-center text-xl text-rz-lategray font-playfair-display"
       style={divStyle}
     >
@@ -68,7 +68,7 @@ const WwdWrapper: FunctionComponent<WwdWrapperType> = ({
                   "text-white": hovered,
                 }
               )}
-            >
+            > 
               {businessConsultancy}
             </div>
           </div>
@@ -79,7 +79,7 @@ const WwdWrapper: FunctionComponent<WwdWrapperType> = ({
             {des}
           </div>
           {hovered && (
-            <FillButton title="" rounded="lg" variant="white-fill">
+            <FillButton title="" rounded="lg" variant="white-bordered">
               <ArrowSVG />
             </FillButton>
           )}
