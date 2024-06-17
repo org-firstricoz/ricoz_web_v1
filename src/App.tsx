@@ -9,6 +9,7 @@ import BlogPage from "./screens/BlogPage";
 import BlogPostDetail from "./components/BlogPostDetail"; 
 import GetStarted from "./screens/GetStarted";
 import { Toaster } from "react-hot-toast";
+import ExpertiseDetail from "./components/ExpertiseDetail";
 
 export default function App(): React.JSX.Element {
   return (
@@ -22,6 +23,7 @@ export default function App(): React.JSX.Element {
         <Route path="/blog" element={<BlogPage />} />
         <Route path="/blog/:postId" element={<BlogPostDetail />}/>
         <Route path="/get-started" element={<GetStarted />} />
+        <Route path="/expertise-detail" element={<ExpertiseDetail />} />
       </Routes>
       <Toaster position="bottom-right" />
     </BrowserRouter>

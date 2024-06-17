@@ -24,6 +24,7 @@ export default function OurExpertise() {
             key={`EXPERISE_${i}`}
             buttonTitle={EXPERTISE.buttonTitle}
             des={EXPERTISE.des}
+            fullDes={EXPERTISE.fullDes}
             img={EXPERTISE.img}
             subtitle={EXPERTISE.subtitle}
             title={EXPERTISE.title}
