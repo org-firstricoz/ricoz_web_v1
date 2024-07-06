@@ -22,6 +22,10 @@ export const NAVLINKS: Array<INavLink> = [
     href: "/contact",
   },
   {
+    title: "Initiatives",
+    href: "/initiatives",
+  },
+  {
     title: "Services",
     href: "#",
     dropdown: true,
