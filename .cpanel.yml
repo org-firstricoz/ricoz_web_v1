@@ -1,7 +1,7 @@
 ---
 deployment:
   tasks:
-    - export DEPLOY_PATH=/home/yourusername/yourdomain.com
+    - export DEPLOY_PATH=/home/ricoz/ricoz.in
     - export NODE_VERSION=16 # or any version compatible with your app
     - /opt/cpanel/ea-nodejs16/bin/npm install
     - /opt/cpanel/ea-nodejs16/bin/npm run build
