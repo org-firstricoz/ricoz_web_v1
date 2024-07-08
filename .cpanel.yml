@@ -5,7 +5,7 @@ deployment:
     - export NODE_VERSION=16 # or any version compatible with your app
     - /opt/cpanel/ea-nodejs16/bin/npm install
     - /opt/cpanel/ea-nodejs16/bin/npm run build
-    - rsync -av --delete dist/ $DEPLOY_PATH/public_html/
+    - rsync -av --delete build/ $DEPLOY_PATH/public_html/
 
 commands:
   pre:
