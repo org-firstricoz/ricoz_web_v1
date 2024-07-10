@@ -11,6 +11,7 @@ import GetStarted from "./screens/GetStarted";
 import { Toaster } from "react-hot-toast";
 import InitiativesPage from "./screens/InitiativesPage";
 import PrivacyPolicy from "./screens/PrivacyPolicy";
+import DeleteAccount from "./screens/DeleteAccount";
 
 export default function App(): React.JSX.Element {
   return (
@@ -20,12 +21,13 @@ export default function App(): React.JSX.Element {
         <Route path="/about" element={<AboutPage />} />
         <Route path="/services/:serviceName" element={<ServiceDetailsPage />} />
         <Route path="/contact" element={<ContactUsPage />} />
-        <Route path="/initiatives" element={<InitiativesPage/>} />
+        <Route path="/initiatives" element={<InitiativesPage />} />
         <Route path="/careers" element={<CareersPage />} />
         <Route path="/blog" element={<BlogPage />} />
         <Route path="/blog/:postId" element={<BlogPostDetail />} />
         <Route path="/get-started" element={<GetStarted />} />
         <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+        <Route path="/delete-account" element={<DeleteAccount />} />
       </Routes>
       <Toaster position="bottom-right" />
     </BrowserRouter>
