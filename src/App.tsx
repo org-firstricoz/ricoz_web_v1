@@ -10,6 +10,7 @@ import BlogPostDetail from "./components/BlogPostDetail";
 import GetStarted from "./screens/GetStarted";
 import { Toaster } from "react-hot-toast";
 import InitiativesPage from "./screens/InitiativesPage";
+import PrivacyPolicy from "./screens/PrivacyPolicy";
 
 export default function App(): React.JSX.Element {
   return (
@@ -24,6 +25,7 @@ export default function App(): React.JSX.Element {
         <Route path="/blog" element={<BlogPage />} />
         <Route path="/blog/:postId" element={<BlogPostDetail />} />
         <Route path="/get-started" element={<GetStarted />} />
+        <Route path="/privacy-policy" element={<PrivacyPolicy />} />
       </Routes>
       <Toaster position="bottom-right" />
     </BrowserRouter>

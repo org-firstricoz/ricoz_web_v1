@@ -36,7 +36,7 @@ export default function Footer() {
           heading="Policies"
           links={[
             { title: "Terms", href: "/" },
-            { title: "Privacy Policy", href: "/about" },
+            { title: "Privacy Policy", href: "/privacy-policy" },
             { title: "Cookie Policy", href: "/contact" },
             { title: "Fraud Disclaimer", href: "/contact" },
           ]}
