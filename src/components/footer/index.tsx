@@ -15,7 +15,7 @@ export default function Footer() {
           <div className="flex gap-2 mt-4 sm:mt-8 ">
             <img src="home.png" className="h-6" alt="" />
             <p className=" text-sm">
-              FLOOR, P-2,S.NO.150/A/1+2 BHUSARI COLONY KOTHRUD PUNE-411038
+            Shiv Niketan, 172/7 picnic garden road, Kolkata - 700039
             </p>
           </div>
           <div className="flex gap-2">
